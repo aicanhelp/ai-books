@@ -25,3 +25,6 @@
 [submodule "resources/Sorting-Algorithm"]
 	path = resources/Sorting-Algorithm
 	url = https://github.com/hustcc/JS-Sorting-Algorithm.git
+[submodule "resources/go42"]
+	path = resources/go42
+	url = https://github.com/ffhelicopter/Go42.git
