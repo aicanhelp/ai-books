@@ -1,0 +1,27 @@
+[submodule "resources/nlp-pytorch-zh"]
+	path = resources/nlp-pytorch-zh
+	url = https://github.com/apachecn/nlp-pytorch-zh.git
+[submodule "resources/fe4ml-zh"]
+	path = resources/fe4ml-zh
+	url = https://github.com/apachecn/fe4ml-zh.git
+[submodule "resources/TensorFlow-2.x-Tutorials"]
+	path = resources/TensorFlow-2.x-Tutorials
+	url = https://github.com/dragen1860/TensorFlow-2.x-Tutorials.git
+[submodule "resources/Deep-Learning-with-TensorFlow-book"]
+	path = resources/Deep-Learning-with-TensorFlow-book
+	url = https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book.git
+[submodule "resources/Dive-into-DL-TensorFlow2.0"]
+	path = resources/Dive-into-DL-TensorFlow2.0
+	url = https://github.com/TrickyGo/Dive-into-DL-TensorFlow2.0.git
+[submodule "resources/typescript-book-chinese"]
+	path = resources/typescript-book-chinese
+	url = https://github.com/jkchao/typescript-book-chinese.git
+[submodule "resources/typescript-guide"]
+	path = resources/typescript-guide
+	url = https://github.com/zhongsp/TypeScript.git
+[submodule "resources/prometheus-book"]
+	path = resources/prometheus-book
+	url = https://github.com/yunlzheng/prometheus-book.git
+[submodule "resources/Sorting-Algorithm"]
+	path = resources/Sorting-Algorithm
+	url = https://github.com/hustcc/JS-Sorting-Algorithm.git
