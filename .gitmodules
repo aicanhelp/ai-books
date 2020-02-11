@@ -28,3 +28,6 @@
 [submodule "resources/go42"]
 	path = resources/go42
 	url = https://github.com/ffhelicopter/Go42.git
+[submodule "resources/interpretable-ml-book-zh"]
+	path = resources/interpretable-ml-book-zh
+	url = https://github.com/apachecn/interpretable-ml-book-zh.git
