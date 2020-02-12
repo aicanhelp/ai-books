@@ -1,33 +1,81 @@
 [submodule "resources/nlp-pytorch-zh"]
-	path = resources/nlp-pytorch-zh
+	path = resources/machine-learning/nlp-pytorch-zh
 	url = https://github.com/apachecn/nlp-pytorch-zh.git
 [submodule "resources/fe4ml-zh"]
-	path = resources/fe4ml-zh
+	path = resources/machine-learning/fe4ml-zh
 	url = https://github.com/apachecn/fe4ml-zh.git
 [submodule "resources/TensorFlow-2.x-Tutorials"]
-	path = resources/TensorFlow-2.x-Tutorials
+	path = resources/machine-learning/TensorFlow-2.x-Tutorials
 	url = https://github.com/dragen1860/TensorFlow-2.x-Tutorials.git
 [submodule "resources/Deep-Learning-with-TensorFlow-book"]
-	path = resources/Deep-Learning-with-TensorFlow-book
+	path = resources/machine-learning/Deep-Learning-with-TensorFlow-book
 	url = https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book.git
 [submodule "resources/Dive-into-DL-TensorFlow2.0"]
-	path = resources/Dive-into-DL-TensorFlow2.0
+	path = resources/machine-learning/Dive-into-DL-TensorFlow2.0
 	url = https://github.com/TrickyGo/Dive-into-DL-TensorFlow2.0.git
 [submodule "resources/typescript-book-chinese"]
-	path = resources/typescript-book-chinese
+	path = resources/programmming-language/typescript-book-chinese
 	url = https://github.com/jkchao/typescript-book-chinese.git
 [submodule "resources/typescript-guide"]
-	path = resources/typescript-guide
+	path = resources/programmming-language/typescript-guide
 	url = https://github.com/zhongsp/TypeScript.git
 [submodule "resources/prometheus-book"]
-	path = resources/prometheus-book
+	path = resources/dev-operations/prometheus-book
 	url = https://github.com/yunlzheng/prometheus-book.git
 [submodule "resources/Sorting-Algorithm"]
-	path = resources/Sorting-Algorithm
+	path = resources/computer-science/Sorting-Algorithm
 	url = https://github.com/hustcc/JS-Sorting-Algorithm.git
 [submodule "resources/go42"]
-	path = resources/go42
+	path = resources/programmming-language/go42
 	url = https://github.com/ffhelicopter/Go42.git
 [submodule "resources/interpretable-ml-book-zh"]
-	path = resources/interpretable-ml-book-zh
+	path = resources/machine-learning/interpretable-ml-book-zh
 	url = https://github.com/apachecn/interpretable-ml-book-zh.git
+[submodule "resources/sklearn-doc-zh"]
+	path = resources/machine-learning/sklearn-doc-zh
+	url = https://github.com/apachecn/sklearn-doc-zh.git
+[submodule "resources/xgboost-doc-zh"]
+	path = resources/machine-learning/xgboost-doc-zh
+	url = https://github.com/apachecn/xgboost-doc-zh.git
+[submodule "resources/prob140-textbook-zh"]
+	path = resources/data-science/prob140-textbook-zh
+	url = https://github.com/apachecn/prob140-textbook-zh.git
+[submodule "resources/data8-textbook-zh"]
+	path = resources/data-science/data8-textbook-zh
+	url = https://github.com/apachecn/data8-textbook-zh.git
+[submodule "resources/ds100-textbook-zh"]
+	path = resources/data-science/ds100-textbook-zh
+	url = https://github.com/apachecn/ds100-textbook-zh.git
+[submodule "resources/pytorch-doc-zh"]
+	path = resources/machine-learning/pytorch-doc-zh
+	url = https://github.com/apachecn/pytorch-doc-zh.git
+[submodule "resources/gensim-doc-zh"]
+	path = resources/machine-learning/gensim-doc-zh
+	url = https://github.com/apachecn/gensim-doc-zh.git
+[submodule "resources/lightgbm-doc-zh"]
+	path = resources/machine-learning/lightgbm-doc-zh
+	url = https://github.com/apachecn/lightgbm-doc-zh.git
+[submodule "resources/opencv-doc-zh"]
+	path = resources/computer-vision/opencv-doc-zh
+	url = https://github.com/apachecn/opencv-doc-zh.git
+[submodule "resources/statsmodels-doc-zh"]
+	path = resources/data-science/statsmodels-doc-zh
+	url = https://github.com/apachecn/statsmodels-doc-zh.git
+[submodule "resources/scapy-docs-zh"]
+	path = resources/data-science/scapy-docs-zh
+	url = https://github.com/apachecn/scapy-docs-zh.git
+[submodule "resources/scrapy-doc-zh"]
+	path = resources/data-science/scrapy-doc-zh
+	url = https://github.com/apachecn/scrapy-doc-zh.git
+[submodule "resources/matplotlib-doc-zh"]
+	path = resources/data-science/matplotlib-doc-zh
+	url = https://github.com/apachecn/matplotlib-doc-zh.git
+[submodule "resources/numpy-doc-zh"]
+	path = resources/data-science/numpy-doc-zh
+	url = https://github.com/apachecn/numpy-doc-zh.git
+[submodule "resources/pandas-doc-zh"]
+	path = resources/data-science/pandas-doc-zh
+	url = https://github.com/apachecn/pandas-doc-zh.git
+[submodule "resources/numba-doc-zh"]
+	path = resources/data-science/numba-doc-zh
+	url = https://github.com/apachecn/numba-doc-zh.git
