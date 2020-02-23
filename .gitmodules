@@ -46,9 +46,6 @@
 [submodule "resources/ds100-textbook-zh"]
 	path = resources/data-science/ds100-textbook-zh
 	url = https://github.com/apachecn/ds100-textbook-zh.git
-[submodule "resources/pytorch-doc-zh"]
-	path = resources/machine-learning/pytorch-doc-zh
-	url = https://github.com/apachecn/pytorch-doc-zh.git
 [submodule "resources/gensim-doc-zh"]
 	path = resources/machine-learning/gensim-doc-zh
 	url = https://github.com/apachecn/gensim-doc-zh.git
@@ -107,7 +104,7 @@
 	path = resources/big-data/hbase-doc-zh
 	url = https://github.com/apachecn/hbase-doc-zh.git
 [submodule "resources/resources/machine-learning/hands-on-ml-zh"]
-	path = resources/resources/machine-learning/hands-on-ml-zh
+	path = resources/machine-learning/hands-on-ml-zh
 	url = https://github.com/apachecn/hands-on-ml-zh.git
 [submodule "resources/data-science/pyda-2e-zh"]
 	path = resources/data-science/pyda-2e-zh
