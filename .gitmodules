@@ -115,3 +115,6 @@
 [submodule "resources/machine-learning/scipycon-2018-sklearn-tut-zh"]
 	path = resources/machine-learning/scipycon-2018-sklearn-tut-zh
 	url = https://github.com/apachecn/scipycon-2018-sklearn-tut-zh.git
+[submodule "resources/Dive-into-DL-PyTorch"]
+	path = resources/machine-learning/Dive-into-DL-PyTorch
+	url = https://github.com/ShusenTang/Dive-into-DL-PyTorch.git
