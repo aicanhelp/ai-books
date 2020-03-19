@@ -118,3 +118,6 @@
 [submodule "resources/Dive-into-DL-PyTorch"]
 	path = resources/machine-learning/Dive-into-DL-PyTorch
 	url = https://github.com/ShusenTang/Dive-into-DL-PyTorch.git
+[submodule "resources/numpy-cn"]
+	path = resources/numpy-cn
+	url = https://github.com/teadocs/numpy-cn.git
