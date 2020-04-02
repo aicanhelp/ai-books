@@ -121,3 +121,9 @@
 [submodule "resources/numpy-cn"]
 	path = resources/numpy-cn
 	url = https://github.com/teadocs/numpy-cn.git
+[submodule "resources/machine-learning/ml-nlp"]
+	path = resources/machine-learning/ml-nlp
+	url = https://github.com/NLP-LOVE/ML-NLP.git
+[submodule "resources/machine-learning/introduction-nlp"]
+	path = resources/machine-learning/introduction-nlp
+	url = https://github.com/NLP-LOVE/Introduction-NLP.git

@@ -61,8 +61,6 @@ Batch Normalization（简称BN）自从提出之后，因为效果特别好，�
 
 **二．Normalization到底是在做什么**
 
-
-
 Normalization的中文翻译一般叫做“规范化”，是一种对数值的特殊函数变换方法，也就是说假设原始的某个数值是x，套上一个起到规范化作用的函数，对规范化之前的数值x进行转换，形成一个规范化后的数值，即：
 
 ![img](imgs/v2-715c308975aa946faa3e925e6fee8b8a_b.jpg)![img](imgs/v2-715c308975aa946faa3e925e6fee8b8a_1440w.jpg)
@@ -127,7 +125,7 @@ $x=Relu(x)$
 
  为根据均值和集合S中神经元各自激活值求出的激活值标准差：
 
-![img](imgs/v2-4eddf6f0438a82f718dd19015a2b2b9b_b.jpg)![img](imgs/v2-4eddf6f0438a82f718dd19015a2b2b9b_1440w.jpg)
+![img](imgs/v2-4eddf6f0438a82f718dd19015a2b2b9b_1440w.jpg)
 
  其中， $\varepsilon$是为了增加训练稳定性而加入的小的常量数据。
 
@@ -139,9 +137,7 @@ $x=Relu(x)$
 
 
 
-
-
-![img](imgs/v2-950510e13c3e5cd6c892c64fc7ffa1f2_b.jpg)![img](imgs/v2-950510e13c3e5cd6c892c64fc7ffa1f2_1440w.jpg)
+![img](imgs/v2-950510e13c3e5cd6c892c64fc7ffa1f2_1440w.jpg)
 
 ​                                        图5. Normalization具体例子
 
@@ -157,17 +153,13 @@ $x=Relu(x)$
 
 **3.1前向神经网络中的BN**
 
-![img](imgs/v2-b4818768a18f17a11d5e1b672426b31e_b.jpg)![img](imgs/v2-b4818768a18f17a11d5e1b672426b31e_1440w.jpg)
+![img](imgs/v2-b4818768a18f17a11d5e1b672426b31e_1440w.jpg)
 
 
 
 ​                                     图6. 前向神经网络中的BatchNorm
 
  对于前向神经网络来说，BatchNorm在计算隐层某个神经元k激活的规范值的时候，对应的神经元集合S范围是如何划定呢？图6给出了示意。因为对于Mini-Batch训练方法来说，根据Loss更新梯度使用Batch中所有实例来做，所以对于神经元k来说，假设某个Batch包含n个训练实例，那么每个训练实例在神经元k都会产生一个激活值，也就是说Batch中n个训练实例分别通过同一个神经元k的时候产生了n个激活值，BatchNorm的集合S选择入围的神经元就是这n个同一个神经元被Batch不同训练实例激发的激活值。划定集合S的范围后，Normalization的具体计算过程与前文所述计算过程一样，采用公式3即可完成规范化操作。
-
-
-
-
 
 **3.2 CNN网络中的BN**
 
@@ -177,7 +169,7 @@ $x=Relu(x)$
 
 
 
-![img](imgs/v2-4404f6aad1cf51cc4d6be4af46ce8805_b.jpg)![img](imgs/v2-4404f6aad1cf51cc4d6be4af46ce8805_1440w.jpg)
+![img](imgs/v2-4404f6aad1cf51cc4d6be4af46ce8805_1440w.jpg)
 
 
 
@@ -185,19 +177,17 @@ $x=Relu(x)$
 
 CNN中的某个卷积层由m个卷积核构成，每个卷积核对三维的输入（通道数*长*宽）进行计算，激活及输出值是个二维平面（长*宽），对应一个输出通道（参考图7），由于存在m个卷积核，所以输出仍然是三维的，由m个通道及每个通道的二维平面构成。
 
-![img](imgs/v2-c9b871c17fe3722b386e0ed56f3c4d4b_b.jpg)![img](imgs/v2-c9b871c17fe3722b386e0ed56f3c4d4b_1440w.jpg)
+![img](imgs/v2-c9b871c17fe3722b386e0ed56f3c4d4b_1440w.jpg)
 
 
 
 ​                     图8.  CNN中的BatchNorm过程
 
-
-
 那么在卷积层中，如果要对通道激活二维平面中某个激活值进行Normalization操作，怎么确定集合S的范围呢？图8给出了示意图。类似于前向神经网络中的BatchNorm计算过程，对于Mini-Batch训练方法来说，反向传播更新梯度使用Batch中所有实例的梯度方向来进行，所以对于CNN某个卷积层对应的输出通道k来说，假设某个Batch包含n个训练实例，那么每个训练实例在这个通道k都会产生一个二维激活平面，也就是说Batch中n个训练实例分别通过同一个卷积核的输出通道k的时候产生了n个激活平面。假设激活平面长为5，宽为4，则激活平面包含20个激活值，n个不同实例的激活平面共包含20*n个激活值。那么BatchNorm的集合S的范围就是由这20*n个同一个通道被Batch不同训练实例激发的激活平面中包含的所有激活值构成（对应图8中所有标为蓝色的激活值）。划定集合S的范围后，激活平面中任意一个激活值都需进行Normalization操作，其Normalization的具体计算过程与前文所述计算过程一样，采用公式3即可完成规范化操作。这样即完成CNN卷积层的BatchNorm转换过程。
 
 
 
-![img](imgs/v2-8c2076c1e26cf8a70c21a26ed6106e35_b.jpg)![img](imgs/v2-8c2076c1e26cf8a70c21a26ed6106e35_1440w.jpg)
+![img](imgs/v2-8c2076c1e26cf8a70c21a26ed6106e35_1440w.jpg)
 
 
 
@@ -219,7 +209,7 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 
 
-![img](imgs/v2-6e52bc02a84d7786399836d618b58191_b.jpg)![img](imgs/v2-6e52bc02a84d7786399836d618b58191_1440w.jpg)
+![img](imgs/v2-6e52bc02a84d7786399836d618b58191_1440w.jpg)
 
 、
 
@@ -259,23 +249,13 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 
 
-
-
-
-
-
-
-![img](imgs/v2-c31a99d3a690e004494cb536ef2abf11_b.jpg)![img](imgs/v2-c31a99d3a690e004494cb536ef2abf11_1440w.jpg)
+![img](imgs/v2-c31a99d3a690e004494cb536ef2abf11_1440w.jpg)
 
 ​                                     图11.  MLP中的LayerNorm
 
 
 
-
-
-
-
-![img](imgs/v2-528b006a0c238284c4f8d7e34547ae28_b.jpg)![img](imgs/v2-528b006a0c238284c4f8d7e34547ae28_1440w.jpg)
+![img](imgs/v2-528b006a0c238284c4f8d7e34547ae28_1440w.jpg)
 
 ​                                          图12.  CNN中的LayerNorm
 
@@ -283,7 +263,7 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 
 
-![img](imgs/v2-2d38ab1541713bfc6bdfc95f0bfe09de_b.jpg)![img](imgs/v2-2d38ab1541713bfc6bdfc95f0bfe09de_1440w.jpg)
+![img](imgs/v2-2d38ab1541713bfc6bdfc95f0bfe09de_1440w.jpg)
 
 ​                                           图13.  RNN中的LayerNorm
 
@@ -297,9 +277,7 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 
 
-
-
-![img](imgs/v2-91d2e47119b5a08984c88a458987eaba_b.jpg)![img](imgs/v2-91d2e47119b5a08984c88a458987eaba_1440w.jpg)
+![img](imgs/v2-91d2e47119b5a08984c88a458987eaba_1440w.jpg)
 
 ​                                 图14   CNN中的Instance Normalization
 
@@ -319,9 +297,7 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 
 
-
-
-![img](imgs/v2-52f3d854b082a8f03478b7a4e6f9e371_b.jpg)![img](imgs/v2-52f3d854b082a8f03478b7a4e6f9e371_1440w.jpg)
+![img](imgs/v2-52f3d854b082a8f03478b7a4e6f9e371_1440w.jpg)
 
 
 
@@ -343,25 +319,17 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 不幸总是突然的，有一天，理发馆里又发生了一件怪事，不过这次不是天灾是人祸，理发馆老板出于好心，给每位理发师单独开个办公室给顾客理发，但是好心办了坏事，这样一来，失忆失聪又无法相互打手势的理发师们怎么应对顽固的顾客呢？怎样才能继续理出“和其他人差不多长”的头发呢？想必一般人这个时候基本无路可走了，但是我们可爱又聪明，同时失聪又失忆的理发师仍然想出了解决办法：他们看了看客人头上的头发，发现不同地方有长有短，于是就把同一个客人所有头发的平均长度作为难题的答案（CNN的InstanceNorm）。听起来这个解决方案匪夷所思，但是出人意料的是，有些客人居然仍然非常满意。人们管这些传说中的神奇理发师为：InstanceNorm理发师。
 
-
-
-
-
 **五.Normalization操作的Re-Scaling不变性**
-
-
 
 我们知道，当神经网络深度加深时，训练有较大困难，往往其原因在于随着网络加深，在反向传播训练模型时，存在梯度爆炸或者梯度消失问题，Loss信息不能有效传导到低层神经网络参数，所以导致参数无法更新，模型无法收敛或者收敛速度慢。而很多环节可能导致梯度爆炸或者梯度消失问题，比如非线性函数及其导数是什么形式以及网络参数是否过大过小等，以非线性函数来说，比如RELU是能极大缓解这个问题的（因为它的导数是个常数），这也是为何目前RELU大行其道的根本原因。从神经网络参数角度看，如果神经网络中的参数具备Re-Scaling 不变性，意味着参数值过大或者过小对神经元输出没什么影响，无疑这对缓解梯度爆炸或者梯度消失也有极大帮助作用，而Normalization确实具备几个不同角度的Re-Scaling不变性，这也许是Normalization为何应用在深度学习有效的原因之一，虽然可能并非本质原因。本节即讲述Normalization为何具备Re-Scaling 不变性这种优良特性。
 
-我们考虑神经网络中的三种Re-Scaling情形：权重向量（Weight Vector）Re-Scaling，数据Re-Scaling和权重矩阵（Weight Matrix）Re-Scaling。
-
-![img](imgs/v2-9d38c768c4057ba44c797e18ed47e599_b.jpg)![img](imgs/v2-9d38c768c4057ba44c797e18ed47e599_1440w.jpg)
+我们考虑神经网络中的三种Re-Scaling情形：权重向量（Weight Vector）Re-Scaling，数据Re-Scaling和权重矩阵（Weight Matrix）Re-Scaling。![img](imgs/v2-9d38c768c4057ba44c797e18ed47e599_1440w.jpg)
 
 ​                                               图16. 权重向量Re-Scaling
 
 对于网络中某个神经元i来说，其对应的边权重向量假设为 $W_{i}$，所谓权重向量（Weight Vector）Re-Scaling，就是将 $W_{i}$ 乘上一个缩放因子$\varphi$ ，如果神经元i在进行权重向量 Re-Scaling之前和之后两种不同情况下做Normalization操作，若Normalization之后神经元i对应的激活值没发生变化，我们就说这种Normalization具备权重向量Re-Scaling不变性（参考图16）。
 
-![img](imgs/v2-c60430bdfc9d7e0b16354dec50d58a26_b.jpg)![img](imgs/v2-c60430bdfc9d7e0b16354dec50d58a26_1440w.jpg)
+![img](imgs/v2-c60430bdfc9d7e0b16354dec50d58a26_1440w.jpg)
 
 
 
@@ -371,7 +339,7 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 
 
-![img](imgs/v2-2a9fbc4ec4d16f824e79710c94522faa_b.jpg)![img](imgs/v2-2a9fbc4ec4d16f824e79710c94522faa_1440w.jpg)
+![img](imgs/v2-2a9fbc4ec4d16f824e79710c94522faa_1440w.jpg)
 
 
 
@@ -381,9 +349,7 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 在了解了三种Re-Scaling的含义及Normalization对应的三种不变性特性后，我们先归纳各种Normalization操作所对应的三种Re-Scaling的不变性特性如下表所示（Layer Normalization原始论文分析了LayerNorm及BatchNorm的Re-Scaling不变性，本文作者补充了InstanceNorm及GroupNorm的情况以及细化了推导过程）：
 
-
-
-![img](imgs/v2-3350e6baf0f31c976e2f94d439d41edc_b.jpg)![img](imgs/v2-3350e6baf0f31c976e2f94d439d41edc_1440w.jpg)
+![img](imgs/v2-3350e6baf0f31c976e2f94d439d41edc_1440w.jpg)
 
 
 
@@ -395,39 +361,39 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 ​    对于某个神经元i的激活a来说，其值为：
 
-![img](imgs/v2-4d122ccd1cd5608862ddb095eba39477_b.jpg)![img](imgs/v2-4d122ccd1cd5608862ddb095eba39477_1440w.jpg)
+![img](imgs/v2-4d122ccd1cd5608862ddb095eba39477_1440w.jpg)
 
 （对于MLP和CNN来说，是一样的，都是这个公式，区别在于CNN是局部连接，MLP是全局连接，也就是说只有  $W_{i}$  的数量规模不同而已。）
 
 其中， ![[公式]](https://www.zhihu.com/equation?tex=W_%7Bi%7D) 是与神经元i相连的边权重向量（Weight Vector），X是输入数据或是多层网络中前一层的输出向量， $b_{i}$ 是偏置。我们可以把偏置看作输入数据值为1的特殊边的权重，所以可以并入前项，简写上述公式为：
 
-![img](imgs/v2-bbf3bb6c79467ffcdea8d6664d3ae31f_b.jpg)![img](imgs/v2-bbf3bb6c79467ffcdea8d6664d3ae31f_1440w.jpg)
+![img](imgs/v2-bbf3bb6c79467ffcdea8d6664d3ae31f_1440w.jpg)
 
    现在假设我们开始re-scale边权重向量 ![[公式]](https://www.zhihu.com/equation?tex=W_%7Bi%7D) ，使得这些边的权重缩放因子为 ![[公式]](https://www.zhihu.com/equation?tex=%5Cvarphi) ，其对应的新的激活得到相同的缩放比例：
 
-![img](imgs/v2-42fd71a3e0186c4fba499b0bc1dd1bf4_b.jpg)![img](imgs/v2-42fd71a3e0186c4fba499b0bc1dd1bf4_1440w.jpg)
+![img](imgs/v2-42fd71a3e0186c4fba499b0bc1dd1bf4_1440w.jpg)
 
 
 
   而边的权重缩放后对应的均值变为：
 
-![img](imgs/v2-ab5a06a6084885d39d5a7b09db19ce41_b.jpg)![img](imgs/v2-ab5a06a6084885d39d5a7b09db19ce41_1440w.jpg)
+![img](imgs/v2-ab5a06a6084885d39d5a7b09db19ce41_1440w.jpg)
 
    也就是说均值也被同比例缩放，这里的关键是因为BN的统计量取值范围是来自于同一个Mini-Batch的实例，所以经过的是用一个神经元，于是对应了相同的边权重向量，那么缩放因子相同，就可以提到求和公式之外。
 
 ​    类似的，如果我们忽略噪音因子，边权重缩放后对应的方差变为：
 
-![img](imgs/v2-d496c84f2c0b21231ccb13b0612249a9_b.jpg)![img](imgs/v2-d496c84f2c0b21231ccb13b0612249a9_1440w.jpg)
+![img](imgs/v2-d496c84f2c0b21231ccb13b0612249a9_1440w.jpg)
 
 可见方差也被同比例缩放，因为
 
-![img](imgs/v2-fb1c92454632795f8232ad49990c0d88_b.jpg)![img](imgs/v2-fb1c92454632795f8232ad49990c0d88_1440w.jpg)
+![img](imgs/v2-fb1c92454632795f8232ad49990c0d88_1440w.jpg)
 
 这是为何说BN具备权重向量Re-Scaling不变性的原因。
 
 类似的，BN也具备数据Re-Scaling不变性，其推导过程与上述推导过程基本一样。因为如果将原始输入X乘以缩放因子，等价于某个神经元i的激活变为
 
-![img](imgs/v2-43bd628aff7b65810cc9deb24c2d27e5_b.jpg)![img](imgs/v2-43bd628aff7b65810cc9deb24c2d27e5_1440w.jpg)
+![img](imgs/v2-43bd628aff7b65810cc9deb24c2d27e5_1440w.jpg)
 
 其余推导类似上述的权重向量ReScaling的后续推导过程，其对应的均值和方差也会同比例缩放，于是得到了BN的数据Re-Scaling不变性。
 
@@ -437,11 +403,11 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 那么为何Layer Norm不具备权重向量Re-Scaling不变性呢？因为Layer Norm是在同隐层的神经元之间求统计量，我们考虑一种比较极端的情况，假设MLP的隐层只包含两个神经元：神经元i和神经元j，而神经元i对应的边权重向量 ![[公式]](https://www.zhihu.com/equation?tex=W_%7Bi%7D) 缩放因子是 $\varphi_{i}$，神经元j对应的边权重向量 $W_{j}$缩放因子是 。$\varphi_{j}$于是得出各自经过缩放后的激活值为：
 
-![img](imgs/v2-46f2f44ce196a6d180b6b92617e38344_b.jpg)![img](imgs/v2-46f2f44ce196a6d180b6b92617e38344_1440w.jpg)
+![img](imgs/v2-46f2f44ce196a6d180b6b92617e38344_1440w.jpg)
 
 对应的缩放后的均值为：
 
-![img](imgs/v2-4a9b152c48c8252af7df22b292455b10_b.jpg)![img](imgs/v2-4a9b152c48c8252af7df22b292455b10_1440w.jpg)
+![img](imgs/v2-4a9b152c48c8252af7df22b292455b10_1440w.jpg)
 
 均值是无法提出公共缩放因子的，类似的方差也提不出公共缩放因子，所以不具备权重向量Re-Scaling不变性。那这又是为什么呢？根本原因是要进行求统计量计算的范围不是同一个神经元，而是不同的神经元，而每个神经元对应权重向量缩放因子不同，所以难以抽出公共缩放因子并相互抵消。除非同一隐层所有隐层神经元共享相同的缩放因子，这个情形其实就是权重矩阵 Re-Scaling能够满足的条件，所以可以看出Layer Norm具备权重矩阵 Re-Scaling不变性而不具备权重向量Re-Scaling不变性。Group Norm也是类似情况。
 
@@ -455,7 +421,7 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 
 
-![img](imgs/v2-04c0ccc1f57abc47d864682b0a763dfd_b.jpg)![img](imgs/v2-04c0ccc1f57abc47d864682b0a763dfd_1440w.jpg)
+![img](imgs/v2-04c0ccc1f57abc47d864682b0a763dfd_1440w.jpg)
 
 
 
@@ -465,9 +431,7 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 
 
-
-
-![img](imgs/v2-ee9deaf029e856d82719eacb499d98ff_b.jpg)![img](imgs/v2-ee9deaf029e856d82719eacb499d98ff_1440w.jpg)
+![img](imgs/v2-ee9deaf029e856d82719eacb499d98ff_1440w.jpg)
 
 
 
@@ -479,29 +443,27 @@ BatchNorm目前基本已经成为各种网络（RNN除外）的标配，主要�
 
 有了损失曲面的基本概念，我们回头来看为何BN是有效的。研究表明，BN真正的用处在于：通过上文所述的Normalization操作，使得网络参数重整（Reparametrize），它对于非线性非凸问题复杂的损失曲面有很好的平滑作用，参数重整后的损失曲面比未重整前的参数损失曲面平滑许多。我们可以用L-Lipschitz函数来评估损失曲面的平滑程度，L-Lipschitz函数定义如下：
 
-![img](imgs/v2-454da9683226d42939daf0e1c0eb3e92_b.jpg)![img](imgs/v2-454da9683226d42939daf0e1c0eb3e92_1440w.jpg)
+![img](imgs/v2-454da9683226d42939daf0e1c0eb3e92_1440w.jpg)
 
 含义也很直观，对于定义区间内的任意取值 ![[公式]](imgs/equation-20200319080551434) 和 ![[公式]](imgs/equation-20200319080551496) ，用它们的距离去和经过函数映射后的值（就是深度网络表达的损失函数）的距离进行比较，如果存在值L满足上述公式条件，也就是说函数映射后的距离一定在任意两个x差值的L倍以内，那么这个函数称为L-Lipschitz函数。而L的大小代表了函数曲面的平滑程度，很明显，L越小曲面越平滑，L越大，则曲面越凹凸不平，时而高峰时而波谷不断颠倒跳跃。举个例子，假设你一出门迈出一步才1米
 
-![img](imgs/v2-9a8274223c6b365dbae9d7f3099558f7_b.jpg)![img](imgs/v2-9a8274223c6b365dbae9d7f3099558f7_1440w.jpg)
+![img](imgs/v2-9a8274223c6b365dbae9d7f3099558f7_1440w.jpg)
 
 ，就突然掉到一个100米深的深沟
 
-![img](imgs/v2-518e585f5700bab3fb37038cd2d5a4ee_b.jpg)![img](imgs/v2-518e585f5700bab3fb37038cd2d5a4ee_1440w.jpg)
+![img](imgs/v2-518e585f5700bab3fb37038cd2d5a4ee_1440w.jpg)
 
 ，那么要满足公式条件，L最小得是100；而假设你一出门迈出一步(
 
-![img](imgs/v2-3c431798289fca86227d9d433723efea_b.jpg)![img](imgs/v2-3c431798289fca86227d9d433723efea_1440w.jpg)
+![img](imgs/v2-3c431798289fca86227d9d433723efea_1440w.jpg)
 
 )踏上了一个0.3米的小台阶
 
-![img](imgs/v2-1108962a9a3145dac65036f2c0da22af_b.jpg)![img](imgs/v2-1108962a9a3145dac65036f2c0da22af_1440w.jpg)
+![img](imgs/v2-1108962a9a3145dac65036f2c0da22af_1440w.jpg)
 
 ，那么L最小等于0.3即可。
 
-
-
-![img](imgs/v2-903d7966bdc6d96dc994bd72341eb4d3_b.jpg)![img](imgs/v2-903d7966bdc6d96dc994bd72341eb4d3_1440w.jpg)
+![img](imgs/v2-903d7966bdc6d96dc994bd72341eb4d3_1440w.jpg)
 
 
 

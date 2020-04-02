@@ -41,7 +41,7 @@ XLNet的出发点就是：能否融合自回归LM和DAE LM两者的优点。就�
 
 
 
-![img](imgs/v2-05d785e9d8f810d118e4fa93f8e9b39f_b.jpg)![img](imgs/v2-05d785e9d8f810d118e4fa93f8e9b39f_1440w.jpg)
+![img](imgs/v2-05d785e9d8f810d118e4fa93f8e9b39f_1440w.jpg)
 
 
 
@@ -49,7 +49,7 @@ XLNet的出发点就是：能否融合自回归LM和DAE LM两者的优点。就�
 
 
 
-![img](imgs/v2-948e085be7a9a2eb7eac2d12069b1a93_b.jpg)![img](imgs/v2-948e085be7a9a2eb7eac2d12069b1a93_1440w.jpg)
+![img](imgs/v2-948e085be7a9a2eb7eac2d12069b1a93_1440w.jpg)
 
 
 
@@ -59,7 +59,7 @@ XLNet的出发点就是：能否融合自回归LM和DAE LM两者的优点。就�
 
 
 
-![img](imgs/v2-2bb1a60af4fe2fa751647fdce48e337c_b.jpg)![img](imgs/v2-2bb1a60af4fe2fa751647fdce48e337c_1440w.jpg)
+![img](imgs/v2-2bb1a60af4fe2fa751647fdce48e337c_1440w.jpg)
 
 上面说的Attention掩码，我估计你还是没了解它的意思，我再用例子解释一下。Attention Mask的机制，核心就是说，尽管当前输入看上去仍然是x1->x2->x3->x4，但是我们已经改成随机排列组合的另外一个顺序x3->x2->x4->x1了，如果用这个例子用来从左到右训练LM，意味着当预测x2的时候，它只能看到上文x3；当预测x4的时候，只能看到上文x3和x2，以此类推……这样，比如对于x2来说，就看到了下文x3了。这种在输入侧维持表面的X句子单词顺序，但是其实在Transformer内部，看到的已经是被重新排列组合后的顺序，是通过Attention掩码来实现的。如上图所示，输入看上去仍然是x1,x2,x3,x4，可以通过不同的掩码矩阵，让当前单词Xi只能看到被排列组合后的顺序x3->x2->x4->x1中自己前面的单词。这样就在内部改成了被预测单词同时看到上下文单词，但是输入侧看上去仍然维持原先的单词顺序了。关键要看明白上图右侧那个掩码矩阵，我相信很多人刚开始没看明白，因为我刚开始也没看明白，因为没有标出掩码矩阵的单词坐标，它的坐标是1-2-3-4，就是表面那个X的单词顺序，通过掩码矩阵，就能改成你想要的排列组合，并让当前单词看到它该看到的所谓上文，其实是掺杂了上文和下文的内容。这是attention mask来实现排列组合的背后的意思。
 
@@ -87,11 +87,11 @@ XLNet的出发点就是：能否融合自回归LM和DAE LM两者的优点。就�
 
 我们上文提到过，XLNet起作用的，如果宏观归纳一下，共有三个因素；
 
-\1. 与Bert采取De-noising Autoencoder方式不同的新的预训练目标：Permutation Language Model(简称PLM)；这个可以理解为在自回归LM模式下，如何采取具体手段，来融入双向语言模型。这个是XLNet在模型角度比较大的贡献，确实也打开了NLP中两阶段模式潮流的一个新思路。
+1. 与Bert采取De-noising Autoencoder方式不同的新的预训练目标：Permutation Language Model(简称PLM)；这个可以理解为在自回归LM模式下，如何采取具体手段，来融入双向语言模型。这个是XLNet在模型角度比较大的贡献，确实也打开了NLP中两阶段模式潮流的一个新思路。
 
-\2. 引入了Transformer-XL的主要思路：相对位置编码以及分段RNN机制。实践已经证明这两点对于长文档任务是很有帮助的；
+2. 引入了Transformer-XL的主要思路：相对位置编码以及分段RNN机制。实践已经证明这两点对于长文档任务是很有帮助的；
 
-\3. 加大增加了预训练阶段使用的数据规模；Bert使用的预训练数据是BooksCorpus和英文Wiki数据，大小13G。XLNet除了使用这些数据外，另外引入了Giga5，ClueWeb以及Common Crawl数据，并排掉了其中的一些低质量数据，大小分别是16G,19G和78G。可以看出，在预训练阶段极大扩充了数据规模，并对质量进行了筛选过滤。这个明显走的是GPT2.0的路线。
+3. 加大增加了预训练阶段使用的数据规模；Bert使用的预训练数据是BooksCorpus和英文Wiki数据，大小13G。XLNet除了使用这些数据外，另外引入了Giga5，ClueWeb以及Common Crawl数据，并排掉了其中的一些低质量数据，大小分别是16G,19G和78G。可以看出，在预训练阶段极大扩充了数据规模，并对质量进行了筛选过滤。这个明显走的是GPT2.0的路线。
 
 所以实验部分需要仔细分析，提升到底是上述哪个因素或者是哪几个因素导致的性能提升？
 
@@ -99,7 +99,7 @@ XLNet的出发点就是：能否融合自回归LM和DAE LM两者的优点。就�
 
 首先，给人最大的印象是：XLNet对于阅读理解类任务，相对Bert，性能有极大幅度地提升。下面是论文报道的实验结果：
 
-![img](imgs/v2-368cb8e6f8b2eeacabe1d2638dd12cb2_b.jpg)![img](imgs/v2-368cb8e6f8b2eeacabe1d2638dd12cb2_1440w.jpg)
+![img](imgs/v2-368cb8e6f8b2eeacabe1d2638dd12cb2_1440w.jpg)
 
 
 
@@ -107,7 +107,7 @@ XLNet的出发点就是：能否融合自回归LM和DAE LM两者的优点。就�
 
 
 
-![img](imgs/v2-9c854303cd62b5ef22a0b2c2a01a72f2_b.jpg)![img](imgs/v2-9c854303cd62b5ef22a0b2c2a01a72f2_1440w.jpg)
+![img](imgs/v2-9c854303cd62b5ef22a0b2c2a01a72f2_1440w.jpg)
 
 
 
@@ -119,7 +119,7 @@ XLNet的出发点就是：能否融合自回归LM和DAE LM两者的优点。就�
 
 
 
-![img](imgs/v2-18c8752f5c9dac8c6de11337a8efb453_b.jpg)![img](imgs/v2-18c8752f5c9dac8c6de11337a8efb453_1440w.jpg)
+![img](imgs/v2-18c8752f5c9dac8c6de11337a8efb453_1440w.jpg)
 
 
 
@@ -131,13 +131,13 @@ GLUE是个综合的NLP任务集合，包含各种类型的任务，因为ensembl
 
 
 
-![img](imgs/v2-78cc6b83fcf24f1f2b89922d217f597f_b.jpg)![img](imgs/v2-78cc6b83fcf24f1f2b89922d217f597f_1440w.jpg)
+![img](imgs/v2-78cc6b83fcf24f1f2b89922d217f597f_1440w.jpg)
 
 
 
 
 
-![img](imgs/v2-2d2651c3e9b5bd28237db65171baa46f_b.jpg)![img](imgs/v2-2d2651c3e9b5bd28237db65171baa46f_1440w.jpg)
+![img](imgs/v2-2d2651c3e9b5bd28237db65171baa46f_1440w.jpg)
 
 
 
@@ -147,7 +147,7 @@ GLUE是个综合的NLP任务集合，包含各种类型的任务，因为ensembl
 
 
 
-![img](imgs/v2-86f738620973ec16395c99480db4239d_b.jpg)![img](imgs/v2-86f738620973ec16395c99480db4239d_1440w.jpg)
+![img](imgs/v2-86f738620973ec16395c99480db4239d_1440w.jpg)
 
 
 

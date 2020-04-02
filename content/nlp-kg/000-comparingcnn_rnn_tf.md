@@ -21,9 +21,7 @@
 
 
 
-
-
-![img](imgs/v2-4b476d918d74c1e85d7dbe8cefe9674a_b.jpg)![img](imgs/v2-4b476d918d74c1e85d7dbe8cefe9674a_1440w.jpg)
+![img](imgs/v2-4b476d918d74c1e85d7dbe8cefe9674a_1440w.jpg)
 
  NLP任务的特点和图像有极大的不同，上图展示了一个例子，NLP的输入往往是一句话或者一篇文章，所以它有几个特点：首先，输入是个一维线性序列，这个好理解；其次，输入是不定长的，有的长有的短，而这点其实对于模型处理起来也会增加一些小麻烦；再次，单词或者子句的相对位置关系很重要，两个单词位置互换可能导致完全不同的意思。如果你听到我对你说：“你欠我那一千万不用还了”和“我欠你那一千万不用还了”，你听到后分别是什么心情？两者区别了解一下；另外，句子中的长距离特征对于理解语义也非常关键，例子参考上图标红的单词，特征抽取器能否具备长距离特征捕获能力这一点对于解决NLP任务来说也是很关键的。
 
@@ -31,9 +29,7 @@
 
  NLP是个很宽泛的领域，包含了几十个子领域，理论上只要跟语言处理相关，都可以纳入这个范围。但是如果我们对大量NLP任务进行抽象的话，会发现绝大多数NLP任务可以归结为几大类任务。两个看似差异很大的任务，在解决任务的模型角度，可能完全是一样的。
 
-
-
-![img](imgs/v2-ec6f99a704502efe7cb38febb4f8b5d9_b.jpg)![img](imgs/v2-ec6f99a704502efe7cb38febb4f8b5d9_1440w.jpg)
+![img](imgs/v2-ec6f99a704502efe7cb38febb4f8b5d9_1440w.jpg)
 
 
 
@@ -51,11 +47,7 @@
 
 
 
-
-
-
-
-![img](imgs/v2-6449ed9d0b34b64f0fd07f9a7ccf4d8a_b.jpg)![img](imgs/v2-6449ed9d0b34b64f0fd07f9a7ccf4d8a_1440w.jpg)
+![img](imgs/v2-6449ed9d0b34b64f0fd07f9a7ccf4d8a_1440w.jpg)
 
 
 
@@ -69,7 +61,7 @@ RNN模型我估计大家都熟悉，就不详细介绍了，模型结构参考�
 
 我们知道，RNN自从引入NLP界后，很快就成为吸引眼球的明星模型，在NLP各种任务中被广泛使用。但是原始的RNN也存在问题，它采取线性序列结构不断从前往后收集输入信息，但这种线性序列结构在反向传播的时候存在优化困难问题，因为反向传播路径太长，容易导致严重的梯度消失或梯度爆炸问题。为了解决这个问题，后来引入了LSTM和GRU模型，通过增加中间状态信息直接向后传播，以此缓解梯度消失问题，获得了很好的效果，于是很快LSTM和GRU成为RNN的标准模型。其实图像领域最早由HighwayNet/Resnet等导致模型革命的skip connection的原始思路就是从LSTM的隐层传递机制借鉴来的。经过不断优化，后来NLP又从图像领域借鉴并引入了attention机制（从这两个过程可以看到不同领域的相互技术借鉴与促进作用），叠加网络把层深作深，以及引入Encoder-Decoder框架，这些技术进展极大拓展了RNN的能力以及应用效果。下图展示的模型就是非常典型的使用RNN来解决NLP任务的通用框架技术大礼包，在更新的技术出现前，你可以在NLP各种领域见到这个技术大礼包的身影。
 
-![img](imgs/v2-ac2851f79662986d5db1a7725c96ee97_b.jpg)![img](imgs/v2-ac2851f79662986d5db1a7725c96ee97_1440w.jpg)
+![img](imgs/v2-ac2851f79662986d5db1a7725c96ee97_1440w.jpg)
 
 
 
@@ -91,9 +83,7 @@ RNN在NLP界一直红了很多年（2014-2018？），在2018年之前，大部�
 
 
 
-
-
-![img](imgs/v2-41f4da9b0afcfbe39bff0ff3f8097760_b.jpg)![img](imgs/v2-41f4da9b0afcfbe39bff0ff3f8097760_1440w.jpg)
+![img](imgs/v2-41f4da9b0afcfbe39bff0ff3f8097760_1440w.jpg)
 
 
 
@@ -113,7 +103,7 @@ RNN在NLP界一直红了很多年（2014-2018？），在2018年之前，大部�
 
 我们先来看第一种方法，现在我们的问题转化成了：我们仍然要保留任意连续时间步（T-1到T时刻）之间的隐层连接，但是在这个前提下，我们还要能够做到并行计算，这怎么处理呢？因为只要保留连续两个时间步的隐层连接，则意味着要计算T时刻的隐层结果，就需要T-1时刻隐层结果先算完，这不又落入了序列依赖的陷阱里了吗？嗯，确实是这样，但是为什么一定要在不同时间步的输入之间并行呢？没有人说RNN的并行计算一定发生在不同时间步上啊，你想想，隐层是不是也是包含很多神经元？那么在隐层神经元之间并行计算行吗？如果你要是还没理解这是什么意思，那请看下图。
 
-![img](imgs/v2-82ec3964b8c2d456126736f2424fd087_b.jpg)![img](imgs/v2-82ec3964b8c2d456126736f2424fd087_1440w.jpg)
+![img](imgs/v2-82ec3964b8c2d456126736f2424fd087_1440w.jpg)
 
 
 
@@ -125,7 +115,7 @@ RNN在NLP界一直红了很多年（2014-2018？），在2018年之前，大部�
 
 
 
-![img](imgs/v2-598c67c45b4fe0d0b16a21ee7ba91226_b.jpg)![img](imgs/v2-598c67c45b4fe0d0b16a21ee7ba91226_1440w.jpg)
+![img](imgs/v2-598c67c45b4fe0d0b16a21ee7ba91226_1440w.jpg)
 
 
 
@@ -151,7 +141,7 @@ RNN在NLP界一直红了很多年（2014-2018？），在2018年之前，大部�
 
 **NLP中早期的怀旧版CNN模型**
 
-![img](imgs/v2-a62e2bc661548fc84a719d944f891eca_b.jpg)![img](imgs/v2-a62e2bc661548fc84a719d944f891eca_1440w.jpg)
+![img](imgs/v2-a62e2bc661548fc84a719d944f891eca_1440w.jpg)
 
 
 
@@ -175,15 +165,13 @@ CNN能在RNN纵横的各种NLP任务环境下生存下来吗？谜底即将揭�
 
 
 
-![img](imgs/v2-2e8a96219ec49a3f0ecc6e56ffca17fb_b.jpg)![img](imgs/v2-2e8a96219ec49a3f0ecc6e56ffca17fb_1440w.jpg)
+![img](imgs/v2-2e8a96219ec49a3f0ecc6e56ffca17fb_1440w.jpg)
 
 
 
 说完这个，我们来看Kim版CNN的第一个问题：它只有一个卷积层。表面看上去好像是深度不够的问题是吧？我会反问你说：为什么要把CNN作深呢？其实把深度做起来是手段，不是目的。只有一个卷积层带来的问题是：对于远距离特征，单层CNN是无法捕获到的，如果滑动窗口k最大为2，而如果有个远距离特征距离是5，那么无论上多少个卷积核，都无法覆盖到长度为5的距离的输入，所以它是无法捕获长距离特征的。
 
-
-
-![img](imgs/v2-c76bbe218e21f8663ff96b72d94b19c5_b.jpg)![img](imgs/v2-c76bbe218e21f8663ff96b72d94b19c5_1440w.jpg)
+![img](imgs/v2-c76bbe218e21f8663ff96b72d94b19c5_1440w.jpg)
 
 
 
@@ -191,7 +179,7 @@ CNN能在RNN纵横的各种NLP任务环境下生存下来吗？谜底即将揭�
 
 
 
-![img](imgs/v2-000530d5a2b06e751d8760fcb926e8f7_b.jpg)![img](imgs/v2-000530d5a2b06e751d8760fcb926e8f7_1440w.jpg)
+![img](imgs/v2-000530d5a2b06e751d8760fcb926e8f7_1440w.jpg)
 
 
 
@@ -203,7 +191,7 @@ CNN能在RNN纵横的各种NLP任务环境下生存下来吗？谜底即将揭�
 
 
 
-![img](imgs/v2-6cc890c74715d5d4ba6dc901a7cb6650_b.jpg)![img](imgs/v2-6cc890c74715d5d4ba6dc901a7cb6650_1440w.jpg)
+![img](imgs/v2-6cc890c74715d5d4ba6dc901a7cb6650_1440w.jpg)
 
 
 
@@ -225,11 +213,7 @@ CNN能在RNN纵横的各种NLP任务环境下生存下来吗？谜底即将揭�
 
 
 
-
-
-
-
-![img](imgs/v2-a45ef27ba20d80536ba3cd880ab5778c_b.jpg)![img](imgs/v2-a45ef27ba20d80536ba3cd880ab5778c_1440w.jpg)
+![img](imgs/v2-a45ef27ba20d80536ba3cd880ab5778c_1440w.jpg)
 
 
 
@@ -237,15 +221,13 @@ Transformer是谷歌在17年做机器翻译任务的“Attention is all you need
 
 下面只说跟本文主题有关的内容。
 
-
-
-![img](imgs/v2-fe59a1336cb3fc0781440b2eaf3ee6da_b.jpg)![img](imgs/v2-fe59a1336cb3fc0781440b2eaf3ee6da_1440w.jpg)
+![img](imgs/v2-fe59a1336cb3fc0781440b2eaf3ee6da_1440w.jpg)
 
 这里要澄清一下，本文所说的Transformer特征抽取器并非原始论文所指。我们知道，“Attention is all you need”论文中说的的Transformer指的是完整的Encoder-Decoder框架，而我这里是从特征提取器角度来说的，你可以简单理解为论文中的Encoder部分。因为Encoder部分目的比较单纯，就是从原始句子中提取特征，而Decoder部分则功能相对比较多，除了特征提取功能外，还包含语言模型功能，以及用attention机制表达的翻译模型功能。所以这里请注意，避免后续理解概念产生混淆。
 
 Transformer的Encoder部分（不是上图一个一个的标为encoder的模块，而是红框内的整体，上图来自The Illustrated Transformer，Jay Alammar把每个Block称为Encoder不太符合常规叫法）是由若干个相同的Transformer Block堆叠成的。 这个Transformer Block其实才是Transformer最关键的地方，核心配方就在这里。那么它长什么样子呢？
 
-![img](imgs/v2-e9f95c3e084c62042d9b819ab21e74d3_b.jpg)![img](imgs/v2-e9f95c3e084c62042d9b819ab21e74d3_1440w.jpg)
+![img](imgs/v2-e9f95c3e084c62042d9b819ab21e74d3_1440w.jpg)
 
 
 
@@ -284,7 +266,7 @@ Transformer有两个版本：Transformer base和Transformer Big。两者结构�
 
 **语义特征提取能力**
 
-![img](imgs/v2-1412367d3ebf52c53fe98c4d3b776616_b.jpg)![img](imgs/v2-1412367d3ebf52c53fe98c4d3b776616_1440w.jpg)
+![img](imgs/v2-1412367d3ebf52c53fe98c4d3b776616_1440w.jpg)
 
 
 
@@ -292,9 +274,7 @@ Transformer有两个版本：Transformer base和Transformer Big。两者结构�
 
 **长距离特征捕获能力**
 
-
-
-![img](imgs/v2-f3adfefb487ae9c6573544f83764f6bc_b.jpg)![img](imgs/v2-f3adfefb487ae9c6573544f83764f6bc_1440w.jpg)
+![img](imgs/v2-f3adfefb487ae9c6573544f83764f6bc_1440w.jpg)
 
 
 
@@ -310,11 +290,7 @@ Transformer有两个版本：Transformer base和Transformer Big。两者结构�
 
 那么在以机器翻译为代表的综合特征抽取能力方面，三个特征抽取器哪个更好些呢？
 
-
-
-
-
-![img](imgs/v2-ae5d62083e6b2337bc1a1e8e9265874c_b.jpg)![img](imgs/v2-ae5d62083e6b2337bc1a1e8e9265874c_1440w.jpg)
+![img](imgs/v2-ae5d62083e6b2337bc1a1e8e9265874c_1440w.jpg)
 
 
 
@@ -322,9 +298,7 @@ Transformer有两个版本：Transformer base和Transformer Big。两者结构�
 
 你可能觉得一个论文的结论不太能说明问题，那么我再给出一个证据，不过这个证据只对比了Transformer和RNN，没带CNN玩，不过关于说服力我相信你不会质疑，实验对比数据如下：
 
-
-
-![img](imgs/v2-d6f384efee4cb2ab1b2a9acb2ffe5224_b.jpg)![img](imgs/v2-d6f384efee4cb2ab1b2a9acb2ffe5224_1440w.jpg)
+![img](imgs/v2-d6f384efee4cb2ab1b2a9acb2ffe5224_1440w.jpg)
 
 上面是GPT论文的实验结论，在8个不同的NLP任务上，在其它条件相同的情况下，只是把特征抽取器从Transformer换成LSTM，平均下来8个任务得分掉了5个点以上。这具备足够说服力吗？
 
@@ -346,7 +320,7 @@ RNN在并行计算方面有严重缺陷，这是它本身的序列依赖特性�
 
 我们从另外一个角度来看，先抛开并行计算能力的问题，单纯地比较一下三个模型的计算效率。可能大家的直观印象是Transformer比较重，比较复杂，计算效率比较低，事实是这样的吗？
 
-![img](imgs/v2-30e0da4de1b7c73bd4ada8d33cdfa0db_b.jpg)![img](imgs/v2-30e0da4de1b7c73bd4ada8d33cdfa0db_1440w.jpg)
+![img](imgs/v2-30e0da4de1b7c73bd4ada8d33cdfa0db_1440w.jpg)
 
 
 
@@ -390,17 +364,13 @@ RNN在并行计算方面有严重缺陷，这是它本身的序列依赖特性�
 
 那么怎么把RNN和CNN塞到Transformer Block的肚子里，让它们背上重重的壳，从而能够实现寄居策略呢？
 
-
-
-![img](imgs/v2-a39c38137b439bec80b6f900607a87a7_b.jpg)![img](imgs/v2-a39c38137b439bec80b6f900607a87a7_1440w.jpg)
-
+![img](imgs/v2-a39c38137b439bec80b6f900607a87a7_1440w.jpg)
 
 
 
 
 
-
-![img](imgs/v2-4d92f0c67a720dd33213d320b0bc86cb_b.jpg)![img](imgs/v2-4d92f0c67a720dd33213d320b0bc86cb_1440w.jpg)
+![img](imgs/v2-4d92f0c67a720dd33213d320b0bc86cb_1440w.jpg)
 
 
 
@@ -408,17 +378,13 @@ RNN在并行计算方面有严重缺陷，这是它本身的序列依赖特性�
 
 那么如果RNN和CNN采取这种寄居策略，效果如何呢？他们还爬的动吗？其实这种改造方法有奇效，能够极大提升RNN和CNN的效果。而且目前来看，RNN或者CNN想要赶上Transformer的效果，可能还真只有这个办法了。
 
-![img](imgs/v2-a33aba5c07b6ebabe0e66f36d7fef43c_b.jpg)![img](imgs/v2-a33aba5c07b6ebabe0e66f36d7fef43c_1440w.jpg)
+![img](imgs/v2-a33aba5c07b6ebabe0e66f36d7fef43c_1440w.jpg)
 
 
 
 我们看看RNN寄居到Transformer后，效果是如何的。上图展示了对原生RNN不断进行整容手术，逐步加入Transformer的各个构件后的效果。我们从上面的逐步变身过程可以看到，原生RNN的效果在不断稳定提升。但是与土生土长的Transformer相比，性能仍然有差距。
 
-
-
-
-
-![img](imgs/v2-3441c600a27faae6ea4cab961b32399e_b.jpg)![img](imgs/v2-3441c600a27faae6ea4cab961b32399e_1440w.jpg)
+![img](imgs/v2-3441c600a27faae6ea4cab961b32399e_1440w.jpg)
 
 
 
