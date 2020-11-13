@@ -18,6 +18,21 @@ GLUE 基准与 SuperGLUE 发布地址：https://gluebenchmark.com
 
 在创造能够理解自然语言的机器之路上，我们显然还有很大的进步空间，但 GLUE 在进一步发展的道路上已不适合作为评估基准了。
 
+
+通常来说，NLP可以分为自然语言理解（NLU）和自然语言生成（NLG）。在NLU方面，时下流行的有GLUE(General Language Understanding Evaluation)排行榜，其上集合了九项NLU的任务，分别是
+：
+
+- CoLA(The Corpus of Linguistic Acceptability): 纽约大学发布的有关语法的数据集，该任务主要是对一个给定句子，判定其是否语法正确，因此CoLA属于单个句子的文本二分类任务；  
+- SST(The Stanford Sentiment Treebank)，是斯坦福大学发布的一个情感分析数据集，主要针对电影评论来做情感分类，因此SST属于单个句子的文本分类任务（其中SST-2是二分类，SST-5是五分类，SST-5的情感极性区分的更细致）；
+- MRPC(Microsoft Research Paraphrase Corpus)，由微软发布，判断两个给定句子，是否具有相同的语义，属于句子对的文本二分类任务；
+- STS-B(Semantic Textual Similarity Benchmark)，主要是来自于历年SemEval中的一个任务（同时该数据集也包含在了SentEval），具体来说是用1到5的分数来表征两个句子的语义相似性，本质上是一个回归问题，但依然可以用分类的方法做，因此可以归类为句子对的文本五分类任务；
+- QQP(Quora Question Pairs)，是由Quora发布的两个句子是否语义一致的数据集，属于句子对的文本二分类任务；
+- MNLI(Multi-Genre Natural Language Inference)，同样由纽约大学发布，是一个文本蕴含的任务，在给定前提（Premise）下，需要判断假设（Hypothesis）是否成立，其中因为MNLI主打卖点是集合了许多不同领域风格的文本，因此又分为matched和mismatched两个版本的MNLI数据集，前者指训练集和测试集的数据来源一致，而后者指来源不一致。该任务属于句子对的文本三分类问题。
+- QNLI（Question Natural Language Inference)，其前身是SQuAD 1.0数据集，给定一个问句，需要判断给定文本中是否包含该问句的正确答案。属于句子对的文本二分类任务；
+- RTE(Recognizing Textual Entailment)，和MNLI类似，也是一个文本蕴含任务，不同的是MNLI是三分类，RTE只需要判断两个句子是否能够推断或对齐，属于句子对的文本二分类任务；
+- WNLI(Winograd Natural Language Inference)，也是一个文本蕴含任务，不过似乎GLUE上这个数据集还有些问题；
+
+
 **进入 SuperGLUE 时代**
 
 ![img](imgs/00e93901213fb80ee853d18d9f42922ab8389406.jpeg)吉祥物的诞生，来自 Nikita Nangia

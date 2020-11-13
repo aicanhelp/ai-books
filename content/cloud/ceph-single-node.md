@@ -163,8 +163,3 @@ ceph-deploy osd create --bluestore zhangsn --data /dev/sdc
  今天我们部署了一个基本的环境，后续我们将依赖该环境进行后续的学习，比如BlueStore的实现原理和代码分析等等。
 
 
-
-作者：SunnyZhang的IT世界
-链接：https://www.jianshu.com/p/cfc37710dadb
-来源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
