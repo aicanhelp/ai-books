@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+    <title>中国软件网-推动ICT产业的健康发展首页</title>
+    <meta name="keywords" content="中国软件网,soft6,cdec,智能生态,软件行业,软件协会">
+    <meta name="description" content="中国软件网是企业级软件导购平台。网站拥有 .丰富详尽的数据库资源、 全方位的软件导购资讯、 权威的渠道报道。 软件渠道交流平台，覆盖95%以上的软件渠道和主流的软件产品和众多渠道招商。曾举办以“伙伴天下、渠道共赢、牵手行动”为主题的全国性大型渠道活动">
+
+    
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="force-rendering" content="webkit" />
+    <link href="http://www.soft6.com/statics/2020/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+    <link rel="stylesheet" href="http://www.soft6.com/statics/2020/css/app.css?20200226" />
+    <script src="http://www.soft6.com/statics/2020/js/vendor.js?20200226"></script>
+    <script src="http://www.soft6.com/statics/2020/js/common.js?20200226"></script>
+    <script>
+        // IE10兼容Promise
+        if ("ActiveXObject" in window) {
+            document.write('<script src="https:\/\/cdn.bootcss.com\/js-polyfills\/0.1.22\/polyfill.min.js"><\/script>'); 
+        }
+    </script>
+    <script src="http://www.soft6.com/statics/2020/js/app.js?20200226"></script>
+    <style type="text/css">
+        .Nav-item{margin-right:45px;}
+    </style>
+
+    
+<!-- GrowingIO Analytics code version 2.1 -->
+<!-- Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com -->
+
+<script type='text/javascript'>
+!function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.giocdn.com/2.1/gio.js","gio");
+  gio('init','bc502189049d0904', {});
+
+//custom page code begin here
+
+//custom page code end here
+
+gio('send');
+
+</script>
+
+<!-- End GrowingIO Analytics code version: 2.1 -->
+
+</head>
+<body ontouchstart>
+    <header class="Header">
+        <section class="Header-wrap Wrapper">
+            <div class="Header-logo">
+                <a href="http://www.soft6.com/">
+                    <img src="http://www.soft6.com/statics/2020/images/logo.png">
+                </a>
+            </div>
+
+            <ul class="Nav mob-hide">
+                <li class="Nav-item">
+                    <a href="http://www.soft6.com/best">资讯</a>
+                    <div class="Dropdown">
+                        <a href="http://cloud.soft6.com/" class="Dropdown-item">云计算</a>
+                        <a href="http://safe.soft6.com/" class="Dropdown-item">安全</a>
+                        <a href="http://www.soft6.com/list-584-1.html" class="Dropdown-item">人工智能</a>
+                        <a href="http://www.soft6.com/list-6-1.html" class="Dropdown-item">软件与服务</a>
+                        <a href="http://news.soft6.com/" class="Dropdown-item">业界资讯</a>
+                        <a href="http://www.soft6.com/list-21-1.html" class="Dropdown-item">每日新闻</a>
+                    </div>
+                </li>
+                <li class="Nav-item"><a href="http://www.soft6.com/list-761-1.html">直播</span></a></li>
+                
+                <li class="Nav-item">
+                    <a href="javascript:;">严选</a>
+                    <div class="Dropdown">
+                        <a href="http://www.soft6.com/index.php?m=yanxuan" target="_blank" class="Dropdown-item">产品严选</a>
+                        <a href="http://www.soft6.com/star.php" target="_blank" class="Dropdown-item">明星会员</a>
+                        <!-- <a href="http://www.soft6.com/research.php" target="_blank" class="Dropdown-item">海比研究</a> -->
+                    </div>
+                </li>
+                <li class="Nav-item"><a href="http://www.soft6.com/research.php">海比研究院</a></li>
+                <!-- <li class="Nav-item"><a href="http://www.soft6.com:8080/newPage" target="_blank">企服年会</a></li> -->
+            
+				<li class="Nav-item"><a href="http://www.soft6.com:8080/activity"><span class="Badge-new">活动</a></li>
+                <li class="Nav-item"><a href="http://www.zryuxiang.com">宇象云</a></li>
+            </ul>
+
+            <!-- <a href="http://cdec.soft6.com/2020/beijing.php" target="_blank" class="Header-item mob-hide">
+                <span style="height: 22px;line-height: 22px;width: 100px;background: url(http://www.soft6.com/statics/2020/images/cdecbg.png);background-size: 100% 22px;text-align: center;">CDEC2020</span>
+            </a> -->
+
+            <a href="javascript:;" class="Header-item" id="openSearch">
+                <icon name="search"><svg class="icon" aria-hidden="true"><use xlink:href="#search"></use></svg></icon>
+                <span>搜索</span>
+            </a>
+
+            <!-- <a href="https://www.huodongxing.com/event/7527985116400" target="_blank" class="Header-item mob-hide"> -->
+
+            <!-- <a href="javascript:;" class="Header-item">
+                <icon name="user"></icon>
+                <span>登录</span>
+            </a> -->
+
+            <a href="javascript:;" class="Header-item hide mob-show" id="openMobileMenu">
+                <icon name="menu"></icon>
+                <span>导航菜单</span>
+            </a>
+        </section>
+    </header>
+
+    <!-- 移动端导航菜单 -->
+    <section class="Menu" id="MobileMenu">
+        <div class="Menu-hd">
+            <span class="Menu-hd-tit">网站导航</span>
+            <icon name="close" size="20" id="closeMobileMenu"></icon>
+        </div>
+        <div class="Menu-con">
+            <ul class="Menu-list">
+                <li class="Menu-list-item">
+                    <a href="/best" class="Menu-list-tit"><span>资讯</span></a>
+                    <!-- <ul class="Menu-sub">
+                        <li class="Menu-sub-item"><a href="http://www.soft6.com/list-556-1.html" class="Dropdown-item">案例解读</a></li>
+                        <li class="Menu-sub-item"><a href="http://www.soft6.com/list-710-1.html" class="Dropdown-item">产业洞察</a></li>
+                        <li class="Menu-sub-item"><a href="http://www.soft6.com/list-559-1.html" class="Dropdown-item">产业趋势</a></li>
+                        <li class="Menu-sub-item"><a href="http://www.soft6.com/list-10-1.html" class="Dropdown-item">科技百咖</a></li>
+                        <li class="Menu-sub-item"><a href="http://www.soft6.com/list-757-1.html" class="Dropdown-item">自媒体圈</a></li>
+                        <li class="Menu-sub-item"><a href="http://www.soft6.com/list-10-1.html" class="Dropdown-item">科技百咖</a></li>
+                    </ul> -->
+                </li>
+                <li class="Menu-list-item">
+                    <a href="http://www.soft6.com/list-7-1.html" class="Menu-list-tit"><span>严选</span></a>
+                    <ul class="Menu-sub">
+                        <li class="Menu-sub-item"><a href="http://www.soft6.com/index.php?m=yanxuan" target="_blank" class="Dropdown-item">产品严选</a></li>
+                        <li class="Menu-sub-item"><a href="http://www.soft6.com/research.php" target="_blank" class="Dropdown-item">海比研究</a></li>
+                        <!-- <li class="Menu-sub-item"><a href="http://www.soft6.com/list-756-1.html" target="_blank" class="Dropdown-item">企业推荐</a></li> -->
+                    </ul>
+                </li>
+                <li class="Menu-list-item">
+                    <a href="http://www.soft6.com/star.php" class="Menu-list-tit"><span>会员服务</span></a>
+                </li>
+                <li class="Menu-list-item">
+                    <a href="http://www.soft6.com/list-761-1.html" class="Menu-list-tit"><span>视频</span></a>
+                </li>
+                <!-- <li class="Menu-list-item">
+                    <a href="http://www.soft6.com/list-747-1.html" class="Menu-list-tit"><span>活动</span></a>
+                    <ul class="Menu-sub">
+                        <li class="Menu-sub-item"><a href="http://cdec.soft6.com/index.php" target="_blank" class="Dropdown-item">生态大会</a></li>
+                        <li class="Menu-sub-item"><a href="http://qifu.soft6.com/index.php" target="_blank" class="Dropdown-item">企服年会</a></li>
+                        <li class="Menu-sub-item"><a href="http://www.soft6.com/list-748-1.html" target="_blank" class="Dropdown-item">其它活动</a></li>
+                    </ul>
+                </li> -->
+                <li class="Menu-list-item">
+                    <a href="javascript:;" class="Menu-list-tit"><span>帮助</span></a>
+                    <ul class="Menu-sub">
+                        <li class="Menu-sub-item"><a href="javascript:;" data-baodao>寻求报道</a></li>
+                        <li class="Menu-sub-item"><a href="javascript:;" data-tougao>投稿</a></li>
+                    </ul>
+                </li>
+                <!-- 
+                <li class="Menu-list-item">
+                    <a href="http://www.soft6.com/m-21.html" class="Menu-list-tit"><span>每日新闻</span></a>
+                </li>
+                <li class="Menu-list-item">
+                    <a href="http://www.soft6.com/m-556.html" class="Menu-list-tit"><span>案例解读</span></a>
+                </li> -->
+            </ul>
+        </div>
+        
+    </section>
+    <!-- 商务咨询模板 -->
+    <template id="BaoDao">
+        <div class="Block-tit" style="margin:0;">商务合作<small>BUSINESS COPPERATION</small></div>
+        <section class="Article">
+            <div class="Article-con" style="text-indent: 0px;text-align: center;margin:0px;">
+                <h4 style="color: #999">媒体合作</h4>
+                <p>小象：18519353155【微信同号】</p>
+                <h4 style="color: #999">商务合作</h4>
+                <p>石永静：15712907321【微信同号】</p>
+                <p>王玉庆：18632277696【微信同号】</p>
+            </div>
+        </section>
+    </template>
+    <!-- 投稿模板 -->
+    <template id="TouGao">
+        <div class="Block-tit">投稿<small>CONTRIBUTIONS</small></div>
+        <section class="Article">
+            <div class="Article-con">
+                <p>如有投稿需求，请把文章发送到邮箱，一经录用会有专人和您联系。</p>
+                <p>投稿邮箱：liujun@soft6.com</p>
+                <p style="margin-top: 40px">
+                    <a href="mailto:soft@soft6.com" class="Btn main" style="display: block;">发送稿件</a>
+                </p>
+            </div>
+        </section>
+    </template>
+
+    <style>
+        .Article-con{font-size: 16px;}
+        .Article-con img{width:400px;}
+    </style>
+
+    <section class="Search" id="Search">
+    <a href="javascript:;" class="Search-close">
+        <icon name="close"></icon>
+    </a>
+    <div class="Search-body">
+        <form action="http://www.soft6.com/index.php?m=search" class="Search-form">
+            <label class="Search-tit" for="SearchInput">
+                <icon name="search"></icon>
+                <span>搜索</span>
+            </label>
+            <input type="hidden" name="m" value="search"/>
+            <input type="hidden" name="c" value="index"/>
+            <input type="hidden" name="a" value="init"/>
+            <input type="hidden" name="typeid" value="1" id="typeid"/>
+            <input type="hidden" name="siteid" value="1" id="siteid"/>
+
+            <input type="search" name="q" placeholder="请输入搜索关键词" class="Search-inp" id="SearchInput">
+        </form>
+        <h2 class="Search-hot">热门搜索：</h2>
+        <a href="http://www.soft6.com/index.php?m=search&c=index&a=init&typeid=1&siteid=1&q=5G" target="_blank" class="Tag">5G</a>
+        <a href="http://www.soft6.com/index.php?m=search&c=index&a=init&typeid=1&siteid=1&q=云计算" target="_blank" class="Tag">云计算</a>
+        <a href="http://www.soft6.com/index.php?m=search&c=index&a=init&typeid=1&siteid=1&q=安全" target="_blank" class="Tag">安全</a>
+        <a href="http://www.soft6.com/index.php?m=search&c=index&a=init&typeid=1&siteid=1&q=大数据" target="_blank" class="Tag">大数据</a>
+        <a href="http://www.soft6.com/index.php?m=search&c=index&a=init&typeid=1&siteid=1&q=纷享销客" target="_blank" class="Tag">纷享销客</a>
+    </div>
+</section>
+    
+    <!-- <a href="https://www.wenjuan.com/s/imAv2e/" target="_blank" > <img src="http://www.soft6.com/statics/202007/20200716-04.jpg" width=100% height="300px" style="margin-bottom: 15px;margin-top: 15px;"/></a> -->
+
+<section class="Swiper Slider" id="Slider" style="max-height:340px;">
+    <div class="Swiper-wrap">
+	    <!-- <a href="http://zryuxiang.com/live/h5SignUp2?from=groupmessage" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202007/20200721-01.jpg);"></a> -->
+	    <!--<a href="http://www.soft6.com:8080/uploaded/2020Saas0623.pdf" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202006/20200623-01.jpg);"></a>
+		
+		<a href="http://www.zryuxiang.com/" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202005/20200522-03.jpg);"></a>
+		-->
+		<!-- <a href="https://www.wenjuan.com/s/YjqYNf" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202007/20200714-01.jpg);"></a> -->
+		<!-- <a href="https://yunqi.aliyun.com/2020/session126" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202009/20200915-01.jpg);"></a> -->
+	  
+		<!-- <a href="http://www.soft6.com:8080/activity-details/shenzhen" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202008/20200831_shenzhen.jpg);"></a> -->
+		
+		<!-- <a href="https://yunqi.aliyun.com/2020/session126" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202009/20200910-2.png);"></a> -->
+		
+		<!-- <a href="https://www.wenjuan.com/s/imAv2e/" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202007/20200716-04.jpg);"></a> -->
+		
+		<!-- <a href="http://www.soft6.com:8080/activity-details/shanghai" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202007/20200721-02.jpg);"></a> -->
+		
+		<!--<a href="https://app.ma.scrmtech.com/meetings-api/sapIndex/SapSourceData?pf_uid=15023_1684&sid=21549&source=2&pf_type=3&channel_id=&channel_name=&tag_id=" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202008/20200811-05.jpg);"></a>
+		-->
+		
+		<!-- <a href="http://www.soft6.com/statics/202008/20200820saas.pdf" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202008/20200820_06.jpg);"></a> -->
+		
+		<!-- <a  class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202011/20201103-1.jpg);"></a>
+		<a  class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202011/20201103-2.jpg);"></a>
+
+		<a href="http://zryuxiang.com/live/h5SignUp4" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202009/20200911-1.jpg);"></a> -->
+<!--
+		<a href="http://www.soft6.com:8080/activity-details/chengdu" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202009/20200911-2.jpg);"></a>
+		 <a href="http://www.soft6.com:8080/activity-details2/tencentSaas" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202007/20200723-01.jpg);"></a> -->
+		<!-- <a href="http://zryuxiang.com/live/h5SignUp3?from=groupmessage" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202007/20200723-01.jpg);"></a> -->
+		<!-- 2020-06-05 12:52:46 mgl <a href="http://live.vhall.com/855552849" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202005/20200522-01.jpg);"></a>
+        <a href="http://www.huodongxing.com/event/1544259116422" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202005/cdec.jpg);"></a> 
+		<a href="http://soft6.com:8080/caoyunshe2" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202006/20200615-01.jpg);"></a>-->
+		<!--
+		<a href="https://www.grapecity.com.cn/events/2020branding" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202006/20200622-01.png);"></a>
+		<a href="https://summit.aliyun.com/partner/2020" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202006/20200612-01.jpg);"></a>
+        <a href="http://www.myqiantu.net/index" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202006/20200602-02.jpg);"></a>
+	    <a href="http://www.soft6.com:8080/activity-details/guangzhou" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202006/20200608-01.jpg);"></a>
+		-->
+
+		<!-- <a href="https://appqvaqd8xy3127.h5.xiaoeknow.com/v1/course/alive/l_5f603188e4b0d59c87b5e11f?type=2" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202009/20200915.jpg);"></a> -->
+		<!-- <a href="http://www.soft6.com:8080/activity-details/chengdu" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202009/20200917.jpg);"></a> -->
+		<!-- <a href="https://appqvaqd8xy3127.h5.xiaoeknow.com/v1/course/alive/l_5f64502de4b01b26d1bac9ae?type=2&app_id=appQVaqD8xy3127&is_redirect=1" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202009/20200921-02.jpg);"></a> -->
+		<!-- <a class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202008/20200825-01.jpg);"></a> -->
+		<!-- <a href="https://appqvaqd8xy3127.h5.xiaoeknow.com/v1/course/alive/l_5f8cf82ce4b06aff1a04e4e4?type=2" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202010/20201019-01.jpg);"></a> -->
+		<a href="http://www.soft6.com/statics/202011/baogao.pdf" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202011/20201120-01.jpg);"></a>
+		
+	</div>
+    <div class="Swiper-nav"></div>
+    <a href="javascript:;" class="Swiper-prev"><icon name="arrow_prev"></icon></a>
+    <a href="javascript:;" class="Swiper-next"><icon name="arrow_next"></icon></a>
+</section>
+
+    <link rel="stylesheet" href="http://www.soft6.com/statics/2020/css/activity.css" />
+
+    <style type="text/css">
+        .Act-list .Card-img{padding-top:66%;}
+        .Act .Card-img{padding-top:33%;}
+        .Card-img img{height:auto;}
+        @media only screen and (max-width: 768px)
+        {
+            .SideBar {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <section class="Container">
+        <div class="Wrapper isFlexRow">
+            <section class="MainBody" >
+                <div class="Panel-hd">
+                    <h2 class="Panel-hd-tit">热度文章</h2>
+                    <a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=%E7%89%B9%E5%86%99" class="Panel-hd-more">查看更多</a>
+                </div>
+                <section class="Act-list">
+                    
+                                                                
+                    
+                    <div class="Card"><a href="http://www.soft6.com/news/202011/26/371103.html" target="_blank" class="Card-img"><img src="http://www.soft6.com/uploadfile/2020/1126/20201126083341755.jpg"></a><h2 class="Card-tit"><a href="http://www.soft6.com/news/202011/26/371103.html" target="_blank">飞书面临3个劣势，那又怎样？</a></h2><div class="Card-info"><div><span>李翘 中国软件网</span><span>2020-11-26</span></div></div></div><div class="Card"><a href="http://www.soft6.com/news/202011/27/371091.html" target="_blank" class="Card-img"><img src="http://www.soft6.com/uploadfile/2020/1127/20201127061152841.jpg"></a><h2 class="Card-tit"><a href="http://www.soft6.com/news/202011/27/371091.html" target="_blank">2021年中国企业中台十大趋势</a></h2><div class="Card-info"><div><span>海比研究 中国软件网</span><span>2020-11-27</span></div></div></div><div class="Card"><a href="http://www.soft6.com/news/202011/25/371073.html" target="_blank" class="Card-img"><img src="http://www.soft6.com/uploadfile/2020/1125/20201125053136436.jpg"></a><h2 class="Card-tit"><a href="http://www.soft6.com/news/202011/25/371073.html" target="_blank">年收入翻倍，腾讯安全的两大利器是啥？</a></h2><div class="Card-info"><div><span>陈杨 中国软件网</span><span>2020-11-25</span></div></div></div><div class="Card"><a href="http://cloud.soft6.com/202011/24/371038.html" target="_blank" class="Card-img"><img src="http://www.soft6.com/uploadfile/2020/1124/20201124061805732.jpg"></a><h2 class="Card-tit"><a href="http://cloud.soft6.com/202011/24/371038.html" target="_blank">2021年，边缘计算的拐点到了？</a></h2><div class="Card-info"><div><span>赵满满 中国软件网</span><span>2020-11-24</span></div></div></div><div class="Card"><a href="http://www.soft6.com/news/202011/23/371008.html" target="_blank" class="Card-img"><img src="http://www.soft6.com/uploadfile/2020/1123/20201123063003286.jpg"></a><h2 class="Card-tit"><a href="http://www.soft6.com/news/202011/23/371008.html" target="_blank">科技大会上，我遇到一个像赵丽颖的女孩</a></h2><div class="Card-info"><div><span>李乔 中国软件网</span><span>2020-11-23</span></div></div></div><div class="Card"><a href="http://www.soft6.com/news/202011/20/370944.html" target="_blank" class="Card-img"><img src="http://www.soft6.com/uploadfile/2020/1120/20201120072646323.jpg"></a><h2 class="Card-tit"><a href="http://www.soft6.com/news/202011/20/370944.html" target="_blank">依图的人工智能求索路</a></h2><div class="Card-info"><div><span>陈杨 中国软件网</span><span>2020-11-20</span></div></div></div>                                    </section>
+            </section>
+            <aside class="SideBar" style="background: #fff;">
+                <div class="Panel"><div class="Panel-hd"><h2 class="Panel-hd-tit">每日新闻</h2><a href="http://www.soft6.com/list-21-1.html" class="Panel-hd-more">查看更多</a></div><div class="Panel-con"><ul class="Timeline"><li class="Timeline-item"><h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202011/27/371127.html" target="_blank">11月27日：加快制造业数字化网络化智能化转型；北京将超前布局6G量子通信</a></h2></li><li class="Timeline-item"><h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202011/26/371099.html" target="_blank">11月26日：中国云专业服务市场规模增长12.3%；华为HMS for Car对所有车企开放</a></h2></li><li class="Timeline-item"><h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202011/25/371066.html" target="_blank">11月25日：中国学生平板市场遭受冲击；新型显示产业成升级新型消费重要驱动</a></h2></li><li class="Timeline-item"><h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202011/24/371037.html" target="_blank">11月24日：上半年中国AI核心产业规模达770亿元；微软在爱尔兰开设工程中心</a></h2></li><li class="Timeline-item"><h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202011/23/370994.html" target="_blank">11月23日： 张勇积极学习和响应国家政策法规；希捷将直接推24TB HAMR硬盘</a></h2></li><li class="Timeline-item"><h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202011/20/370921.html" target="_blank">11月20日：我国大数据产业今年达2192亿美元；5G新基建推进为智慧医疗夯实基础</a></h2></li><li class="Timeline-item"><h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202011/20/370906.html" target="_blank">11月19日： AI的四波浪潮将重塑各行各业；2020中国金融云市场规模达到19.1亿</a></h2></li><li class="Timeline-item"><h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202011/17/370835.html" target="_blank">11月17日：互联网企业抢抓5G技术发展新机遇；AMD发布全新架构计算卡Instinct MI100</a></h2></li></ul></div></div>
+            </aside>
+        </div>
+    </section>
+
+    <section class="Container">
+        <div class="Wrapper ">
+            <div class="Panel-hd">
+                <h2 class="Panel-hd-tit">最新视频</h2>
+                <a href="http://www.soft6.com/list-761-1.html" class="Panel-hd-more">查看更多</a>
+            </div>
+            <div class="Card-group">
+                                                <div class="Card">
+                        <a href="https://v.qq.com/x/page/t3158v6ktpt.html" target="_blank" class="Card-img">
+                            <img src="http://www.soft6.com/uploadfile/2020/1009/20201009052328167.jpg" />
+                            <icon name="player" class="List-pl"></icon>
+                        </a>
+                        <h2 class="Card-tit">
+                            <a href="https://v.qq.com/x/page/t3158v6ktpt.html" target="_blank">《曹云社》第十四期：协同管理专场第三期之走进致远互联</a>
+                            <a href="https://v.qq.com/x/page/t3158v6ktpt.html" target="_blank"></a>
+                        </h2>
+                        <div class="Card-info">
+                        </div>
+                    </div>
+                                    <div class="Card">
+                        <a href="https://v.qq.com/x/page/o3158pxhoww.html" target="_blank" class="Card-img">
+                            <img src="http://www.soft6.com/uploadfile/2020/1009/20201009052158179.jpg" />
+                            <icon name="player" class="List-pl"></icon>
+                        </a>
+                        <h2 class="Card-tit">
+                            <a href="https://v.qq.com/x/page/o3158pxhoww.html" target="_blank">曹云社第十三期：奇妙的应用尽在东软智能终端</a>
+                            <a href="https://v.qq.com/x/page/o3158pxhoww.html" target="_blank"></a>
+                        </h2>
+                        <div class="Card-info">
+                        </div>
+                    </div>
+                                    <div class="Card">
+                        <a href="https://v.qq.com/x/page/f3142l54zri.html" target="_blank" class="Card-img">
+                            <img src="http://www.soft6.com/uploadfile/2020/0903/20200903-shuzihua.jpg" />
+                            <icon name="player" class="List-pl"></icon>
+                        </a>
+                        <h2 class="Card-tit">
+                            <a href="https://v.qq.com/x/page/f3142l54zri.html" target="_blank">曹云社第十期：走进东软集团之奇妙的HR数字化</a>
+                            <a href="https://v.qq.com/x/page/f3142l54zri.html" target="_blank">2020年 9月2 日</a>
+                        </h2>
+                        <div class="Card-info">
+                        </div>
+                    </div>
+                                    <div class="Card">
+                        <a href="https://v.qq.com/x/page/y3129qr0jsc.html" target="_blank" class="Card-img">
+                            <img src="http://www.soft6.com/uploadfile/2020/0724/20200724092624552.png" />
+                            <icon name="player" class="List-pl"></icon>
+                        </a>
+                        <h2 class="Card-tit">
+                            <a href="https://v.qq.com/x/page/y3129qr0jsc.html" target="_blank">葡萄城发布“赋能开发者”业务使命</a>
+                            <a href="https://v.qq.com/x/page/y3129qr0jsc.html" target="_blank">2020年 6 月 30 日</a>
+                        </h2>
+                        <div class="Card-info">
+                        </div>
+                    </div>
+                                        </div>
+        </div>
+    </section>
+
+    <section class="Container">
+        <div class="Wrapper">
+            <div class="Panel-hd">
+                <h2 class="Panel-hd-tit">专题推荐</h2>
+                <!-- <a href="#" class="Panel-hd-more">查看更多</a> -->
+            </div>
+            <section class="Act">
+                <div class="Card">
+                    <a href="http://www.soft6.com/special/yyysc/" target="_blank" class="Card-img">
+                        <img src="http://www.soft6.com/statics/202004/yyysc.png">
+                    </a>
+                </div>
+                <div class="Card">
+                    <a href="http://www.soft6.com/special/shengtai/yinghe.php" target="_blank" class="Card-img">
+                        <img src="http://www.soft6.com/statics/202005/yinghe600.png">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </section>
+
+<section class="Container">
+    <section class="Wrapper isFlexRow">
+        <section class="MainBody">
+            <div class="Panel">
+                <section class="ScrollNav" id="ScrollNav">
+    <div class="ScrollNav-con">
+        <div class="ScrollNav-wrap">
+            <a href="http://www.soft6.com/index.php?m=content&c=index&a=best" class="ScrollNav-item active">
+                <span>产业洞察</span>
+            </a>
+            <a href="http://www.soft6.com/index.php?m=content&c=index&a=lists&catid=556" class="ScrollNav-item">
+                <span>案例解读</span>
+            </a>
+            <!-- <a href="http://www.soft6.com/list-710-1.html" class="ScrollNav-item">
+                <span>产业洞察</span>
+            </a> -->
+            <a href="http://www.soft6.com/index.php?m=content&c=index&a=lists&catid=757" class="ScrollNav-item">
+                <span>自媒体圈</span>
+            </a>
+            <a href="http://www.soft6.com/index.php?m=content&c=index&a=lists&catid=559" class="ScrollNav-item">
+                <span>十大趋势</span>
+            </a>
+        </div>
+    </div>
+</section>
+                <div class="Panel-con">
+
+                                        
+                    <ul class="List" id="PageList">
+                                                
+
+                                                                                                                            <li class="List-item">
+                                                                            <div class="List-img">
+                                            <a href="http://www.soft6.com/news/202011/27/371138.html" target="_blank">
+                                                <img src="http://www.soft6.com/uploadfile/2020/1127/20201127053756527.jpg" alt="数字商业企业服务洞见SaaS新力量">
+                                            </a>
+                                        </div>
+                                                                        <div class="List-con">
+                                        <h2 class="List-tit">
+                                            <a href="http://www.soft6.com/news/202011/27/371138.html" target="_blank">数字商业企业服务洞见SaaS新力量</a>
+                                        </h2>
+                                        <p class="List-desc">数字商业SaaS厂商，服务企业转向数字商业全应用。</p>
+                                        <div class="List-info">
+                                            <div>
+                                                <span>中国软件网</span>
+                                                <span>2020-11-27</span>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=SaaS" class="Tag" target="_blank">SaaS</a>                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                                                                                                            <li class="List-item">
+                                                                            <div class="List-img">
+                                            <a href="http://www.soft6.com/news/202011/27/371134.html" target="_blank">
+                                                <img src="http://www.soft6.com/uploadfile/2020/1127/20201127045845410.jpg" alt="Salesforce 计划收购Slack">
+                                            </a>
+                                        </div>
+                                                                        <div class="List-con">
+                                        <h2 class="List-tit">
+                                            <a href="http://www.soft6.com/news/202011/27/371134.html" target="_blank">Salesforce 计划收购Slack</a>
+                                        </h2>
+                                        <p class="List-desc">11月27日消息，据外媒报道，知情人士透露，Salesforce正在就收购Slack进行谈判，该交易可能于下周宣布。在《华尔街日报》首次报道Salesforc   </p>
+                                        <div class="List-info">
+                                            <div>
+                                                <span>中国软件网</span>
+                                                <span>2020-11-27</span>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=Salesforce" class="Tag" target="_blank">Salesforce</a>                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                                                                                                            <li class="List-item">
+                                                                            <div class="List-img">
+                                            <a href="http://www.soft6.com/news/202011/27/371133.html" target="_blank">
+                                                <img src="http://www.soft6.com/uploadfile/2020/1127/20201127045711559.jpg" alt="Oracle EPM 云连续四年获评 Gartner 魔力象限领导者">
+                                            </a>
+                                        </div>
+                                                                        <div class="List-con">
+                                        <h2 class="List-tit">
+                                            <a href="http://www.soft6.com/news/202011/27/371133.html" target="_blank">Oracle EPM 云连续四年获评 Gartner 魔力象限领导者</a>
+                                        </h2>
+                                        <p class="List-desc">日前，Gartner发布了《2020年云财务计划与分析解决方案魔力象限》(Magic Quadrant for Cloud Financial Planning and Analysis Solutions)   </p>
+                                        <div class="List-info">
+                                            <div>
+                                                <span>中国软件网</span>
+                                                <span>2020-11-27</span>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=Oracle" class="Tag" target="_blank">Oracle</a><a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=EPM" class="Tag" target="_blank">EPM</a>                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                                                                                                            <li class="List-item">
+                                                                            <div class="List-img">
+                                            <a href="http://www.soft6.com/news/202011/27/371129.html" target="_blank">
+                                                <img src="http://www.soft6.com/uploadfile/2020/1127/20201127035342790.jpg" alt="人脸识别AI赛道再融资">
+                                            </a>
+                                        </div>
+                                                                        <div class="List-con">
+                                        <h2 class="List-tit">
+                                            <a href="http://www.soft6.com/news/202011/27/371129.html" target="_blank">人脸识别AI赛道再融资</a>
+                                        </h2>
+                                        <p class="List-desc">近日，国内人工智能企业瑞为技术宣布完成数百万人民币的C轮融资，此次融资由中信证券领投，赛富、深投控、兴湘中证、南方基金、松禾梦想跟   </p>
+                                        <div class="List-info">
+                                            <div>
+                                                <span>中国软件网</span>
+                                                <span>2020-11-27</span>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=AI" class="Tag" target="_blank">AI</a>                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                                                                                                            <li class="List-item">
+                                                                            <div class="List-img">
+                                            <a href="http://www.soft6.com/news/202011/27/371128.html" target="_blank">
+                                                <img src="http://www.soft6.com/uploadfile/2020/1127/20201127033938591.jpg" alt="百度与重庆人社局共建AI人才产业基地">
+                                            </a>
+                                        </div>
+                                                                        <div class="List-con">
+                                        <h2 class="List-tit">
+                                            <a href="http://www.soft6.com/news/202011/27/371128.html" target="_blank">百度与重庆人社局共建AI人才产业基地</a>
+                                        </h2>
+                                        <p class="List-desc">日前，在2020重庆英才大会上，百度与重庆市人力资源和社会保障局达成战略合作协议。  据悉，双方将充分发挥各自优势，筹建AI人才产业基地，   </p>
+                                        <div class="List-info">
+                                            <div>
+                                                <span>中国软件网</span>
+                                                <span>2020-11-27</span>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=%E7%99%BE%E5%BA%A6" class="Tag" target="_blank">百度</a>                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                                                                                                            <li class="List-item">
+                                                                            <div class="List-img">
+                                            <a href="http://www.soft6.com/news/202011/27/371125.html" target="_blank">
+                                                <img src="http://www.soft6.com/uploadfile/2020/1127/20201127023532513.jpg" alt="洞见2021中国企业服务年会 OCQ内账宝荣膺2020中国财务软件年度产品创新奖">
+                                            </a>
+                                        </div>
+                                                                        <div class="List-con">
+                                        <h2 class="List-tit">
+                                            <a href="http://www.soft6.com/news/202011/27/371125.html" target="_blank">洞见2021中国企业服务年会 OCQ内账宝荣膺2020中国财务软件年度产品创新奖</a>
+                                        </h2>
+                                        <p class="List-desc">11月19日，国内企业服务领域趋势洞察年度专业高端峰会—— 洞见2021，中国企业服务年会 在北京香格里拉饭店成功举行。本次会议以 双循环时   </p>
+                                        <div class="List-info">
+                                            <div>
+                                                <span>中国软件网</span>
+                                                <span>2020-11-27</span>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=OCQ" class="Tag" target="_blank">OCQ</a><a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=%E5%86%85%E8%B4%A6%E5%AE%9D" class="Tag" target="_blank">内账宝</a>                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                                                                                                            <li class="List-item">
+                                                                            <div class="List-img">
+                                            <a href="http://news.soft6.com/202011/27/371124.html" target="_blank">
+                                                <img src="http://www.soft6.com/uploadfile/2020/1127/20201127023004588.jpg" alt="北斗系统总设计师杨长风：北斗三号核心器部件国产化达到100%">
+                                            </a>
+                                        </div>
+                                                                        <div class="List-con">
+                                        <h2 class="List-tit">
+                                            <a href="http://news.soft6.com/202011/27/371124.html" target="_blank">北斗系统总设计师杨长风：北斗三号核心器部件国产化达到100%</a>
+                                        </h2>
+                                        <p class="List-desc">近日，2020世界5G大会在广州开幕。大会主论坛上，北斗卫星导航系统工程总设计师杨长风发表了题为 北斗+5G 万物互联 的主旨演讲。    (图片   </p>
+                                        <div class="List-info">
+                                            <div>
+                                                <span>腾讯网</span>
+                                                <span>2020-11-27</span>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=%E5%8C%97%E6%96%97%E7%B3%BB%E7%BB%9F" class="Tag" target="_blank">北斗系统</a><a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=%E5%9B%BD%E4%BA%A7%E5%8C%96" class="Tag" target="_blank">国产化</a>                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                                                                                                            <li class="List-item">
+                                                                            <div class="List-img">
+                                            <a href="http://www.soft6.com/news/202011/27/371123.html" target="_blank">
+                                                <img src="http://www.soft6.com/uploadfile/2020/1127/20201127022705505.jpg" alt="ERP Out了，谁动了ERP的奶酪">
+                                            </a>
+                                        </div>
+                                                                        <div class="List-con">
+                                        <h2 class="List-tit">
+                                            <a href="http://www.soft6.com/news/202011/27/371123.html" target="_blank">ERP Out了，谁动了ERP的奶酪</a>
+                                        </h2>
+                                        <p class="List-desc">你一定听说过 上ERP找死，不上ERP等死 这句格言，它从一个高度上概括了ERP重要性和复杂性。可以说，ERP代表着制造业信息化管理的高度和水平   </p>
+                                        <div class="List-info">
+                                            <div>
+                                                <span>doit</span>
+                                                <span>2020-11-27</span>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=ERP" class="Tag" target="_blank">ERP</a><a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=%E9%87%91%E8%9D%B6%E4%BA%91" class="Tag" target="_blank">金蝶云</a>                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                                                                                                            <li class="List-item">
+                                                                            <div class="List-img">
+                                            <a href="http://news.soft6.com/202011/27/371122.html" target="_blank">
+                                                <img src="http://www.soft6.com/uploadfile/2020/1127/20201127022358740.jpg" alt="iPhone 12中国配件不足5% 国产不应该是廉价的代名词">
+                                            </a>
+                                        </div>
+                                                                        <div class="List-con">
+                                        <h2 class="List-tit">
+                                            <a href="http://news.soft6.com/202011/27/371122.html" target="_blank">iPhone 12中国配件不足5% 国产不应该是廉价的代名词</a>
+                                        </h2>
+                                        <p class="List-desc">尽管苹果公司一直依托于中国智造以及配套的中国手机产业链，但其实在很多关键配件和高溢价配件的采购上更倾向于美日韩的产品。根据最新的拆   </p>
+                                        <div class="List-info">
+                                            <div>
+                                                <span> 中关村在线 </span>
+                                                <span>2020-11-27</span>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=iPhone" class="Tag" target="_blank">iPhone</a><a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=12" class="Tag" target="_blank">12</a>                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                                                                                                            <li class="List-item">
+                                                                            <div class="List-img">
+                                            <a href="http://www.soft6.com/news/202011/27/371121.html" target="_blank">
+                                                <img src="http://www.soft6.com/uploadfile/2020/1127/20201127022254986.png" alt="工信部：加快推动制造业数字化、网络化、智能化转型">
+                                            </a>
+                                        </div>
+                                                                        <div class="List-con">
+                                        <h2 class="List-tit">
+                                            <a href="http://www.soft6.com/news/202011/27/371121.html" target="_blank">工信部：加快推动制造业数字化、网络化、智能化转型</a>
+                                        </h2>
+                                        <p class="List-desc">近日2020世界智能制造大会在江苏南京开幕，工业和信息化部党组成员、副部长辛国斌，在会上提出加快推动制造业数字化、网络化、智能化转型。   </p>
+                                        <div class="List-info">
+                                            <div>
+                                                <span>中国IDC圈</span>
+                                                <span>2020-11-27</span>
+                                            </div>
+                                            <div>
+                                                <a href="http://www.soft6.com/index.php?m=content&c=tag&a=lists&tag=%E5%B7%A5%E4%BF%A1%E9%83%A8" class="Tag" target="_blank">工信部</a>                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                                    </ul>
+                                    </div>
+                <div class="Panel-ft" id="Loading" data-url="http://www.soft6.com/index.php?m=content&c=index&a=best"></div>            </div>
+        </section>
+        <aside class="SideBar">
+            <div class="Panel"><div class="Panel-hd"><h2 class="Panel-hd-tit">热文推荐</h2></div><div class="Panel-con"><ul class="Timeline"><li class="Timeline-item">
+                <h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202011/24/371016.html" target="_blank">“四横八纵”的美的工业互联网2.0 做制造业数字化升级的引擎</a></h2><span class="Timeline-info">11月24日</span></li><li class="Timeline-item">
+                <h2 class="Timeline-tit"><a href="http://news.soft6.com/202011/23/370989.html" target="_blank">世界互联网大会·互联网发展论坛在乌镇开幕</a></h2><span class="Timeline-info">11月23日</span></li><li class="Timeline-item">
+                <h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202011/20/370920.html" target="_blank">工信部：将加强政策引领 制定工业互联网创新发展行动规划</a></h2><span class="Timeline-info">11月20日</span></li><li class="Timeline-item">
+                <h2 class="Timeline-tit"><a href="http://news.soft6.com/202011/11/370705.html" target="_blank">互联网反垄断指南发酵：阿里跌7%腾讯跌6% ATMJ两日市值蒸发1.8万亿</a></h2><span class="Timeline-info">11月11日</span></li><li class="Timeline-item">
+                <h2 class="Timeline-tit"><a href="http://cloud.soft6.com/202010/28/370387.html" target="_blank">发布智能制造解决方案，浪潮云将打造50亿工业互联网产业生态基金</a></h2><span class="Timeline-info">10月28日</span></li><li class="Timeline-item">
+                <h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202010/27/370315.html" target="_blank">RTE 2020 实时互联网创业挑战赛收官，实时互动或成互联网下一个最大趋势</a></h2><span class="Timeline-info">10月27日</span></li><li class="Timeline-item">
+                <h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202010/15/370074.html" target="_blank">工业互联网十大平台谁是大赢家？| 十问2021中国企业服务</a></h2><span class="Timeline-info">10月15日</span></li><li class="Timeline-item">
+                <h2 class="Timeline-tit"><a href="http://www.soft6.com/news/202009/30/369876.html" target="_blank">政策、生态、专家智库齐加持，助力石景山工业互联网走上快车道</a></h2><span class="Timeline-info">09月30日</span></li><li class="Timeline-item">
+                <h2 class="Timeline-tit"><a href="http://news.soft6.com/202009/29/369854.html" target="_blank">田溯宁：随着5G建设完成 产业互联网的基础设施就到来了</a></h2><span class="Timeline-info">09月29日</span></li><li class="Timeline-item">
+                <h2 class="Timeline-tit"><a href="http://news.soft6.com/202009/17/369552.html" target="_blank">十问2021中国企业服务之“双循环”带来什么？</a></h2><span class="Timeline-info">09月17日</span></li></ul></div></div>
+            <div class="Panel">
+    <!-- <a href="https://www.grapecity.com.cn/developer/spreadjs/xunlianying" target="_blank" class="Card-img" title="可嵌入您系统的在线报表控件">
+        <img src="http://www.soft6.com/statics/202005/grapecity.jpg"> 
+    <a href="https://www.bagevent.com/event/csdisummit/p/412889" target="_blank" class="Card-img">
+        <img src="http://www.soft6.com/statics/202006/20200602-01.jpg">
+    </a>
+	<a href="http://www.synnex.com.cn/cn/Default.aspx" target="_blank" class="Card-img">
+        <img src="http://www.soft6.com/statics/202007/20200701-1.jpg">
+    </a>
+	-->
+	<!-- <a href="https://shanghai-intelligent-building-technology.hk.messefrankfurt.com/shanghai/zh-cn.html" target="_blank" class="Card-img"> -->
+        <!-- <img src="http://www.soft6.com/statics/202007/20200708-01.jpg"  style="height: 215px;"> -->
+    <!-- </a> -->
+	<!-- <a href="https://www.grapecity.com.cn/events/hzg-cases-competition?utm_source=soft6&utm_medium=bannerad&utm_term=body&utm_content=huozige&utm_campaign=community" target="_blank" class="Card-img" > <img src="http://www.soft6.com/statics/202007/20200723-02.png" style="height: 215px;"> -->
+    <!-- </a> -->
+    <!-- <a href="http://www.mf999.com/nocode.html?source=baidusem_pc_nocode&keyword=soft6" target="_blank" class="Card-img" > <img src="http://www.soft6.com/statics/202008/20200831-03.jpg" style="height: 215px;"> -->
+    </a>
+</div>
+            <div class="Panel">
+    <div class="Panel-hd">
+        <h2 class="Panel-hd-tit">活动推荐</h2>
+    </div>
+    <div class="Panel-con">
+        <section class="Swiper Slider-mini">
+            <div class="Swiper-wrap">
+
+               
+				<a href="http://www.enicn.com/Enicn/ACT/xxhdh/2020/0916/388.html" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202010/2020102601.jpg);"><h2 class="Slider-mini-tit"></h2></a>
+                <a href="https://www.actionsoft.com.cn/2020AWS_Partner/index.jsp" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202009/20200918.jpg);"><h2 class="Slider-mini-tit"></h2></a>
+
+
+                <a href="https://special.cyzone.cn/special/index/init?special_id=2037" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202009/20200915-02.jpg);"><h2 class="Slider-mini-tit"></h2></a>
+
+                <a href="http://www.oray.com/jump/46074" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202009/20200914.png);"><h2 class="Slider-mini-tit"></h2></a>
+              
+                
+                <a href="http://www.idcquan.com/Special/IDCC2020SZ/DCEX/" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202005/20200720-01.jpg);"><h2 class="Slider-mini-tit"></h2></a>
+                <!-- <a href="http://www.oray.com/jump/46007" target="_blank" class="Swiper-slide" style="background-image: url(http://www.soft6.com/statics/202005/hsk.jpg);"><h2 class="Slider-mini-tit"></h2></a> -->
+				<!-- 2020-5-21 mgl start -->
+				<!--
+				<a href="http://www.jifang360.com/special/623online/" class="Swiper-slide" target="_blank" style="background-image: url(http://www.soft6.com/statics/202005/20200521-01.jpg);">
+                    <h2 class="Slider-mini-tit"></h2>
+				</a>
+				-->
+				<!-- <a href="http://www.flashmemoryworld.com/" class="Swiper-slide" target="_blank" style="background-image: url(http://www.soft6.com/statics/202007/20200703-01.png);"> -->
+                    <!-- <h2 class="Slider-mini-tit"></h2> -->
+				<!-- </a> -->
+				<!-- 2020-5-29 wy start -->
+				<!-- <a href="http://iiotshow.com/iiot/" class="Swiper-slide" target="_blank" style="background-image: url(http://www.soft6.com/statics/202005/20200529-01.jpg);"> -->
+                    <!-- <h2 class="Slider-mini-tit"></h2> -->
+				<!-- </a> -->
+				<!-- 2020-5-29 wy end -->
+				<!--
+				<a href="https://jinshuju.net/f/CMxjVg/" class="Swiper-slide" target="_blank" style="background-image: url(http://www.soft6.com/statics/202005/20200521-02.jpg);">
+                    <h2 class="Slider-mini-tit"></h2>
+                </a>
+				-->
+				<a href="http://huiyi.cpem.org.cn/ai/" class="Swiper-slide" target="_blank" style="background-image: url(http://www.soft6.com/statics/202005/20200521-03.jpg);">
+                    <h2 class="Slider-mini-tit"></h2>
+                </a>
+				<!-- 2020-5-21 mgl end -->
+			    <!-- <a href="http://www.oray.com/jump/46021/" class="Swiper-slide" target="_blank" style="background-image: url(http://www.soft6.com/statics/202006/20200603-01.jpg);">
+                    <h2 class="Slider-mini-tit"></h2>
+                </a> -->
+
+                <a href="https://www.mf999.com/certify.html" class="Swiper-slide" target="_blank" style="background-image: url(http://www.soft6.com/statics/202009/20200921.jpg);">
+                    <h2 class="Slider-mini-tit"></h2>
+                </a>
+                <!--<a href="https://1024.csdn.net/" class="Swiper-slide" target="_blank" style="background-image: url(http://www.soft6.com/statics/202010/20201012.jpg);">
+                    <h2 class="Slider-mini-tit"></h2>
+                </a> -->
+                
+            </div>
+            <div class="Swiper-nav"></div>
+        </section>
+    </div>
+</div>
+        </aside>
+    </section>
+</section>
+    <footer class="Footer">
+        <section class="Footer-wrap Wrapper">
+            <div class="Footer-map">
+                <h2 class="Footer-tit">关于我们</h2>
+                <dl>
+                    <dd><a href="http://www.soft6.com/about.html"">关于我们</a></dd>
+                    <dd><a href="javascript:;" data-baodao>商务合作</a></dd>
+                    <dd><a href="http://www.soft6.com/report.html">寻求报道</a></dd>
+                    <dd><a href="javascript:;" data-tougao>我要投稿</a></dd>
+                    <dd><a href="http://www.soft6.com/join.html">加入我们</a></dd>
+                    <div style="display: none;">
+                        <dd><a href="http://cloud.soft6.com/">云计算</a></dd>
+                        <dd><a href="http://safe.soft6.com/">安全</a></dd>
+                        <dd><a href="http://www.soft6.com/list-584-1.html">人工智能</a></dd>
+                        <dd><a href="http://www.soft6.com/list-6-1.html">软件与服务</a></dd>
+                        <dd><a href="http://news.soft6.com/"">业界资讯</a></dd>
+                        <dd><a href="http://www.soft6.com/about.html"">关于我们</a></dd>
+                        <dd><a href="mailto:liujun@soft6.com">联系我们</a></dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="Footer-links">
+                <h2 class="Footer-tit">友情链接</h2>
+                <dl>
+                    <dd><a href="http://www.csia.org.cn/" title="中国软件行业协" target="_blank">中国软件行业协会</a ></dd>
+                    <dd><a href="http://www.cacfo.com" title="总会计师协会" target="_blank">总会计师协会</a ></dd>
+                    <dd><a href="http://www.isc.org.cn/" title="中国互联网协会" target="_blank">中国互联网协会</a ></dd>
+                    <dd><a href="http://www.cast.org.cn/" title="科学技术协会" target="_blank">科学技术协会</a ></dd>
+                    <dd><a href="http://www.cie-info.org.cn/" title="中国电子学会" target="_blank">中国电子学会</a ></dd>
+                    <dd><a href="http://www.ciia.org.cn/" title="中国信息协会" target="_blank">中国信息协会</a ></dd>
+                    <dd><a href="http://corp.pconline.com.cn" title="太平洋电脑网" target="_blank">太平洋电脑网</a ></dd>
+                    <dd><a href="http://software.it168.com/" title="IT168" target="_blank">IT168</a ></dd>
+                    <dd><a href="http://www.vsharing.com/" title="畅享网" target="_blank">畅享网</a ></dd>
+                    <dd><a href="http://www.cbinews.com/" title="电脑商情在线" target="_blank">电脑商情在线</a ></dd>
+                    <dd><a href="http://www.enicn.com/" title="ENI经济和信息化" target="_blank">ENI经济和信息化</a ></dd>
+                    <dd><a href="http://www.chinabyte.com" title="比特网" target="_blank">比特网</a ></dd>
+                    <dd><a href="http://www.chyxx.com/" title="产业信息网" target="_blank">产业信息网</a ></dd>
+                    <dd><a href="http://www.e-works.net.cn/" title="e-works" target="_blank">e-works</a ></dd>
+                    <dd><a href="http://www.zhiding.cn/" title="至顶网" target="_blank">至顶网</a ></dd>
+                    <dd><a href="https://www.shangyexinzhi.com/" title="商业新知" target="_blank">商业新知</a ></dd>
+                    <dd><a href="http://www.zol.com.cn/" title="中关村在线" target="_blank">中关村在线</a ></dd>
+                    <dd><a href="https://www.iimedia.cn" title="艾媒网" target="_blank">艾媒网</a ></dd>
+                    <!-- <dd><a href="http://so.baidu.com/" title="百度营销" target="_blank">百度营销</a ></dd> -->
+                    <dd><a href="http://www.techtmt.com" title="TMT" target="_blank">TMT</a ></dd>
+                    <dd><a href="http://www.zryuxiang.com/" title="宇象云" target="_blank">宇象云</a ></dd>
+                    <dd><a href="http://www.chinastor.com/" title="中国存储网" target="_blank">中国存储网</a ></dd>
+                    <dd><a href="https://www.rsxq.com/" title="人事星球" target="_blank">人事星球</a ></dd>
+                </dl>
+            </div>
+            <div class="Footer-qr" style="flex:1;display: flex;justify-content: space-around;align-items: center;">
+                <div class="Footer-qr-item">
+                    <img src="http://www.soft6.com/statics/2020/images/wx_soft6.png" width="120" height="120">
+                    官方公众号
+                </div>
+                <div class="Footer-qr-item">
+                    <img src="http://www.soft6.com/statics/2020/images/wx_service.png" width="120" height="120">
+                    企中棠公众号
+                </div>
+                
+            </div>
+        </section>
+        <section class="Footer-copy">
+            Copyright &copy; 2003-2020 soft6.com All Right Reserved.
+            <br />昆仑海比(北京)信息科技有限公司&nbsp;版权所有 <a target="_blank" href="http://beian.miit.gov.cn/state/outPortal/loginPortal.action">京ICP备12052919号-1</a>
+        </section>
+    </footer>
+    
+    <section class="Backtop">
+        <div class="Backtop-item" title="微信公众号">
+            <icon name="wechat"></icon>
+            <div class="Backtop-qr">
+                <img src="http://www.soft6.com/statics/2020/images/wx_soft6.png" alt="微信公众号" width="120" height="120">
+                微信公众号
+            </div>
+        </div>
+        <div class="Backtop-item" id="GoTop" data-tip="返回顶部" data-tip-align="left">
+            <icon name="arrow_top"></icon>
+        </div>
+    </section>
+
+    <script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="//www.soft6.com/share.php"></script>
+    <script type="text/javascript">
+        wx.config(shareConf);
+        wx.ready(function () {
+            //分享到朋友圈
+            wx.onMenuShareTimeline({
+             title: title, // 分享标题
+             desc: description,
+             link: url,
+             imgUrl: thumb, 
+            });
+         
+            //分享给朋友
+            wx.onMenuShareAppMessage({
+             title: title, // 分享标题
+             desc: description,
+             link: url,
+             imgUrl: thumb, 
+            });
+          });
+    </script>
+</body>
+</html>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?199506307bbbcf36b9b8d50e815d535b";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
