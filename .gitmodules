@@ -127,3 +127,6 @@
 [submodule "resources/machine-learning/introduction-nlp"]
 	path = resources/machine-learning/introduction-nlp
 	url = https://github.com/NLP-LOVE/Introduction-NLP.git
+[submodule "resources/d2l-zh"]
+	path = resources/d2l-zh
+	url = https://github.com/d2l-ai/d2l-zh.git
