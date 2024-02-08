@@ -130,3 +130,21 @@
 [submodule "resources/d2l-zh"]
 	path = resources/d2l-zh
 	url = https://github.com/d2l-ai/d2l-zh.git
+[submodule "resources/visual-ml/python-for-beginners"]
+	path = resources/visual-ml/python-for-beginners
+	url = https://github.com/Visualize-ML/Book1_Python-For-Beginners.git
+[submodule "resources/visual-ml/beauty-of-datav"]
+	path = resources/visual-ml/beauty-of-datav
+	url = https://github.com/Visualize-ML/Book2_Beauty-of-Data-Visualization.git
+[submodule "resources/visual-ml/elements-of-math"]
+	path = resources/visual-ml/elements-of-math
+	url = https://github.com/Visualize-ML/Book3_Elements-of-Mathematics.git
+[submodule "resources/visual-ml/power-of-matrix"]
+	path = resources/visual-ml/power-of-matrix
+	url = https://github.com/Visualize-ML/Book4_Power-of-Matrix.git
+[submodule "resources/visual-ml/ess-prob-and-stat"]
+	path = resources/visual-ml/ess-prob-and-stat
+	url = https://github.com/Visualize-ML/Book5_Essentials-of-Probability-and-Statistics.git
+[submodule "resources/visual-ml/vs-for-ml"]
+	path = resources/visual-ml/vs-for-ml
+	url = https://github.com/Visualize-ML/Book7_Visualizations-for-Machine-Learning.git
