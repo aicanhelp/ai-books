@@ -148,3 +148,6 @@
 [submodule "resources/visual-ml/vs-for-ml"]
 	path = resources/visual-ml/vs-for-ml
 	url = https://github.com/Visualize-ML/Book7_Visualizations-for-Machine-Learning.git
+[submodule "resources/service-framework/dapr-cn"]
+	path = resources/service-framework/dapr-cn
+	url = https://github.com/dapr-cn/docs.git
