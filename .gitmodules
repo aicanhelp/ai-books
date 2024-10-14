@@ -151,3 +151,6 @@
 [submodule "resources/service-framework/dapr-cn"]
 	path = resources/service-framework/dapr-cn
 	url = https://github.com/dapr-cn/docs.git
+[submodule "resources/cloud/helm-doc-zh-cn"]
+	path = resources/cloud/helm-doc-zh-cn
+	url = https://github.com/whmzsu/helm-doc-zh-cn
